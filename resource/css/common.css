@@ -7,40 +7,14 @@
 
 /* 헤더 부분 */
 #header{width: 100%;}
-.top_box{width: 100%;min-width: 940px;height: 30px;position: relative;border-bottom: 1px solid #dfdfdf;background-color: #fbfbfb;z-index: 11;}
-.top_left{padding: 7px 8px 0}
-.top_left li{float: left;}
-.top_left li  a{display: block;font-size: 11px;margin-left: 6px; letter-spacing: -1px;background: url(../images/bullet.png) no-repeat right 4px;padding-right: 6px;line-height: 16px;}
-.top_left li  a:hover,.top_left li > a:focus{text-decoration: underline;}
-.top_left li .n_app{height: 16px;margin-left: 10px;letter-spacing: -1px;background: url(../images/icon.png) no-repeat -420px -541px;padding-left: 22px;}
-.top_left .s_font{position: relative;background: url(../images/sp_vertical.png) no-repeat 8px 5px;margin: -2px 0 0 4px;background-color: #fdfdfd;}
-.top_left .s_font > a{position: relative;height: 18px;display: block;border: 1px solid #ccc;background: url(../images/bullet.png) no-repeat 72px -656px;padding:0 17px 0 21px;margin: 0;line-height: 20px;float: left;}
-.top_left .s_font > a:hover, .top_left .s_font > a:focus{text-decoration: none;border: 1px solid #999;z-index: 10}
-.top_left .s_font.list_on .font_list {display: block;}
-.top_left .s_font .font_list {display: none;position: absolute;left: 0;top: 19px;height: 18px;}
-.top_left .s_font .font_list a{display: block;width: 50px;border: 1px solid #ccc;background:#f2f2f2 url(../images/sp_vertical.png) no-repeat 7px 4px;padding: 0;padding:0 17px 0 21px;margin: 0;line-height: 18px;float: left;font-family: '나눔고딕',NanumGothic,sans-serif;text-decoration: none;}
-.top_left .s_font .font_list a:hover,.top_left .s_font .font_list:focus{color: #fff;border: 1px solid #5c5e68;background-color: #7a7d89;background-position: 7px -206px;}
-.top_left .s_font.help_on .font_help + div{display: block;}
-.top_left .s_font .font_help + div{display: none;width: 109px;position: absolute;left: 0;top: 20px;padding: 8px 0 3px;border: 1px solid #ccc;background:#fafafa;z-index: 10;border-top: none;}
-.top_left .s_font ul li{margin-bottom: 3px;}
-.top_left .s_font button{position: absolute;width: 17px;height: 17px;bottom: 0px;right: 2px;background: url(../images/sp_vertical.png) no-repeat -7px -176px;z-index: 11;}
-.top_left li a.font_help{display: block;width: 20px;height: 18px;padding: 0;float: left;border: 1px solid #ccc;background: url(../images/sp_vertical.png) no-repeat 0 -90px;border-left: 1px solid #e3e3e3;margin-left: -1px;}
-.top_left li a.font_help:hover,.top_left li a.font_help:focus{border: 1px solid #999;background-position: 0 -120px;}
-
-.top_center{margin-left: -71px;position: absolute;left: 50%;top: 0;}
-.top_center li{width:48px;height: 31px;float: left;}
-.top_center li a{display: block;height: 31px;}
-.top_center .head_menu01{background: url(../images/icon.png) no-repeat 0 0;}
-.top_center .head_menu02{background: url(../images/icon.png) no-repeat -48px 0;}
-.top_center .head_menu03{background: url(../images/icon.png) no-repeat -96px 0;}
-
-.top_right{float: right;margin-right: 10px;}
-.top_right li{float: left; margin: 0 3px 0 4px;}
-.top_right .head_link01{width: 30px;height: 16px;background: url(../images/icon.png) no-repeat -340px -41px;text-indent: -9999px}
-.top_right .head_link01 a{display: block;width: 30px;height: 16px;float: left;}
-.top_right .bar {color:#dfdfe1;margin: 0;margin-top: 2px;}
-.top_right .head_link02{width: 54px;height: 16px;background: url(../images/icon.png) no-repeat -50px -71px;text-indent: -9999px}
-.top_right .head_link02 a{display: block;width: 54px;height: 16px;float: left;}
+.top_box{width: 1080px;margin: 0 auto;position: relative;overflow: hidden;}
+.top_menu{float: right;margin: 11px -5px 0 0; overflow: hidden;}
+.top_menu li{float: left; margin: 0 3px 0 4px;}
+.top_menu li a{color: #888;letter-spacing: -1px}
+.head_link01{width: 30px;height: 16px;background: url(../images/icon.png) no-repeat -340px -41px;text-indent: -9999px}
+.head_link01 a{display: block;width: 30px;height: 16px;float: left;}
+.head_link02{width: 54px;height: 16px;background: url(../images/icon.png) no-repeat -50px -71px;text-indent: -9999px}
+.head_link02 a{display: block;width: 54px;height: 16px;float: left;}
 
 /* skip_nav */
 .skip_nav{position: relative;}
@@ -48,11 +22,11 @@
 .skip_nav a:focus{top: 0;outline-color: #2db400}
 
 /* 검색 부분 */
-.search_box{width: 823px;height: 65px;margin: 0 auto;position: relative;padding: 37px 0 23px 117px;}
+.search_box{width: 1080px;height: 65px;margin: 0 auto;position: relative;}
 .search_box h1{width: 210px;height: 78px;float: left;margin-top: -19px;}
 .search_box h1 a{display: block;height: 78px;background: url(../images/logo.gif) no-repeat;overflow: hidden;text-indent: -9999px;}
 .search_box .search {position: relative;float: left;}
-.search form span{float: left;display: block;width: 352px;height: 20px; border: 3px solid #2db400;padding: 7px;background-color: #fff;}
+.search form span{float: left;display: block;width: 352px;height: 20px; border: 3px solid #00c73c;padding: 7px;background-color: #fff;}
 .search form span input{border: 0;width: 324px;height: 20px;line-height: 21px;font-size: 16px;font-weight: bold;}
 .search form span input:focus{outline:none;}
 .search button{margin-left: 5px;background: url(../images/btn_search.png) no-repeat;width: 54px;height: 40px;text-indent: -9999px;}
