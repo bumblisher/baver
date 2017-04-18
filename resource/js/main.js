@@ -69,7 +69,8 @@ $(document).ready(function(){
 	var searchTop = -20;
 	var newsTop = -20;
 	
-	$(".time_search").on("mouseenter", function(){
+	$(".time_search").on("mouseenter", function(e){
+        $(".time_search ol").eq(0).stop().css({"margin-top":0})
 		clearTimeout(rolling_search);
 		timer = setTimeout(function(){
 			$(".time_search").addClass("on");
