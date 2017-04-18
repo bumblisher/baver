@@ -84,8 +84,7 @@
 .time_search.on {position: absolute;top: -1px;right: 0;width: 160px;height: 258px;background-color: #fff;z-index: 15;border: 1px solid #2db400;padding: 20px;}
 .time_search.on h3{display: block;}
 .time_search.on .arrow{display: none;}
-.time_search.on ol {}
-.time_search.on ol li { margin-top: 8px;}
+.time_search.on ol li {margin-top: 8px;}
 .time_search.on ol li.on{font-weight: bold;}
 .time_search.on ol li a {color: #000;}
 .time_search.on ol li a:hover,.time_search.on ol li a:focus {text-decoration: underline;}
@@ -94,17 +93,25 @@
 /* 뉴스 부분 */
 #content_wrap{width: 100%;background-color: #f2f4f7;overflow: hidden;border-bottom: 1px solid #d1d8e4;}
 #content {width: 1080px;margin: 8px auto;overflow: hidden;}
-.news_wrap{width: 640px;float: left;}
-.news_box{width: 609px;border: 1px solid #e6e6e6; background-color: #f9f9f9;margin-top: 5px;padding: 9px 10px 9px 14px;height: 14px;}
-.news_box h3{background: url(../images/icon.png) no-repeat -184px -306px;width: 50px;height: 12px;float: left;margin-right: 10px;}
+.news_wrap{width: 740px;float: left;}
+.news_box{border: 1px solid #dee3eb; background-color: #fff;margin-top: 8px;padding: 15px 16px;height: 14px;}
+.news_box h3{background: url(../images/new/sp_newscast_v170321.png) no-repeat -220px -44px;width: 62px;height: 14px;float: left;margin-right: 10px;}
 .news_box h3 a{display: block;overflow: hidden;text-indent: -9999px;}
 .news_box .news_rolling{float: left;height: 14px;overflow: hidden;position: relative;}
 .news_box .news_rolling ul{overflow: hidden;}
 .news_box .news_rolling li{height: 14px;margin-bottom: 6px;}
-.news_box ul li a:hover,.news_box ul li a:focus{text-decoration: underline;}
-.news_box .news_cate{float: right;margin-top: 2px;}
-.news_box .news_cate li{float: left;color:#d0d0d1;padding-left: 2px;}
-.news_box .news_cate li a{display: block;float: left;font-size: 11px;letter-spacing: -0.09em;padding-right: 2px;}
+.news_box .news_rolling li a:hover,.news_box .news_rolling li a:focus{text-decoration: underline;}
+.news_menu{float: right;}
+.news_menu li{float: left;color:#d0d0d1;margin-left: 14px;}
+.news_menu li a{display: block; opacity: 0.7;}
+.news_menu .n_news a{width: 62px;height: 14px;background: url(../images/new/sp_newscast_v170321.png) no-repeat -220px -112px;opacity: 1;}
+.news_menu .n_news a:hover,.news_menu .n_news a:focus{background-position: -220px -78px;}
+.news_menu .n_tv a{width: 24px;height: 14px;background: url(../images/new/sp_newscast_v170321.png) no-repeat -66px -199px;}
+.news_menu .n_sport a{width: 36px;height: 14px;background: url(../images/new/sp_newscast_v170321.png) no-repeat -10px -199px;}
+.news_menu .n_eco a{width: 24px;height: 14px;background: url(../images/new/sp_newscast_v170321.png) no-repeat -110px -199px;}
+.news_menu .n_vote a{width: 38px;height: 14px;background: url(../images/new/sp_newscast_v170321.png) no-repeat -139px -199px;}
+.news_menu .vote_ico{display:inline-block;width: 12px;height: 14px;background: url(../images/new/sp_newscast_v170321.png) no-repeat -240px -199px;}
+.news_menu li a:hover,.news_menu li a:focus{opacity: 1;}
 
 #news_stand{width: 633px;border: 1px solid #d6d6d6; background-color: #fff;margin-top: 5px;}
 .news_header{border-bottom: 1px solid #e7e7e7;height: 12px;padding: 14px;position: relative;}
