@@ -56,7 +56,7 @@
 						</div>	
 					</div>
 				</div>
-				<p class="search_banner"><a href="#"><img src="resource/images/international.png" alt="국제연합일"></a></p>
+				<p class="search_banner"><a href="#"><img src="resource/images/new/mobile_185555777464.png" alt="과학의날"></a></p>
 			</div>
 			<!-- 메뉴 header -->
 			<h2 class="hidden">메인메뉴</h2>
@@ -106,7 +106,7 @@
 		<div id="content_wrap">
 		    <div id="content">
                 <div class="news_wrap">
-                    <p class="main_ad"><a href="#"><img src="resource/images/new/ad_main.gif" alt="메인광고 이미지" /></a></p>
+                    <p class="main_ad"><a href="#"><img src="resource/images/new/ad_main.jpg" alt="메인광고 이미지" /></a></p>
                     <div class="news_box">
                         <h3><a href="#">연합뉴스</a></h3>
                         <div class="news_rolling">
@@ -130,13 +130,22 @@
                         <div class="news_header">
                             <h3><a href="#">뉴스스탠드</a></h3>
                             <ul>
-                                <li class="on"><a href="#">전체언론사</a>|</li>
-                                <li><a href="#">MY뉴스</a></li>
+                                <li class="all_news on"><a href="#">전체언론사</a><span class="bar"></span></li>
+                                <li class="my_news"><a href="#">MY뉴스</a></li>
                             </ul>
-                            <div class="news_view">
+                            <div class="news_set">
                                 <a href="#">이미지형</a>
                                 <a href="#">리스트형</a>
+                                <a href="#">설정</a>
                             </div>
+                            <div class="news_pager">
+                                <div class="page_arrow">
+<!--                                    <p class="page_num"><span>1</span>/5</p>-->
+                                    <a href="#" class="pre"><p></p><span class="hidden">이전</span></a>
+                                    <a href="#" class="next"><p></p><span class="hidden">다음</span></a>
+                                </div>
+                            </div>
+<!--
                             <div class="news_sel">
                                 <a href="#">주요언론사</a>
                                 <ul>
@@ -150,6 +159,7 @@
                                     <li><a href="#">지역</a></li>
                                 </ul>
                             </div>
+-->
                         </div>
                         <div class="news_con">
                             <ul class="on">
@@ -159,18 +169,12 @@
                                 <button><span class="hidden">언론사 추가</span></button>
                             </div>
                         </div>
-                        <div class="news_footer">
-                            <a href="#">구독설정</a>
-                            <div class="page_arrow">
-                                <p><span>1</span>/5</p>
-                                <a href="#">이전</a>
-                                <a href="#">다음</a>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
                 <div id="login_wrap">
                     <div class="login_box">
+<!--
                         <form action="#">
                             <fieldset>
                                 <legend class="hidden">로그인</legend>
@@ -198,71 +202,140 @@
                                 </div>
                             </fieldset>
                         </form>
-                    </div>
-                    <div id="today_box">
-                        <h3>투데이</h3>
-                        <div class="Tbox_date">
-                            <a href="#"><strong>10.26.</strong>(수)</a>
-                            <a href="#">TV편성</a>
+-->
+                        <div class="security_login">
+                            <span>네이버를 보다 편리하고 안전하게 이용하세요.</span>
+                            <a href="#" class="login_btn"><span class="hidden">NAVER 로그인</span></a>
+                            <p><a href="#">아이디</a>/<a href="#">비밀번호 찾기</a></p>
+                            <p><a href="#">회원가입</a></p>
                         </div>
-                        <ul>
-                            <li><a href="#"><strong>학습</strong></a><a href="#">영어로 듣는 뉴스</a><span class="bar"> | </span><a href="#">영어톡톡</a></li>
-                            <li><a href="#"><strong>행사</strong></a><a href="#">현재 상영 영화</a><span class="bar"> | </span><a href="#">스포츠 주요 경기 일정</a></li>
-                            <li><a href="#"><strong>스포츠</strong></a><a href="#">페레스 2홈런, 클리블랜드 승리</a></li>
-                            <li><a href="#"><strong>스포츠</strong></a><a href="#">NC "이재학, 한국시리즈 엔트리 제외"</a></li>
-                        </ul>
-                        <div class="Tbox_menu">
-                            <a href="#">생활위젯</a>
+                    </div>
+                </div>
+                    <div id="today_box">
+                        <h3 class="hidden">투데이</h3>
+                        <div class="Tbox_date">
+                            <a href="#"><strong>05.10.</strong><span>(수)</span></a>
+                            <span class="bar"></span>
+                            <p class="today_title">뉴스</p>
                             <div class="page_arrow">
-                                <p><span>1</span>/3</p>
-                                <a href="#">이전</a>
-                                <a href="#">다음</a>
+                                <p class="page_num"><span>1</span>/5</p>
+                                <a href="#" class="pre"><p></p><span class="hidden">이전</span></a>
+                                <a href="#" class="next"><p></p><span class="hidden">다음</span></a>
+                            </div>
+                        </div>
+                        <ul class="Tbox_list">
+                            <li class="on">
+                                <div class="weather">
+                                    <a href="#">
+                                        <div class="weather_now">
+                                            <p><span class="hidden">날씨흐림</span></p>
+                                            <div>
+                                                <p>21<span>°C</span></p>
+                                                <p class="min">10<span>°</span></p>
+                                                <i>/</i>
+                                                <p class="max">21<span>°</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="weather_text">
+                                            <strong>어제와 같아요</strong>
+                                            <p>미세먼지 <span>보통</span></p>
+                                        </div>
+                                    </a>
+                                    <div class="weather_link">
+                                        <a href="#">날씨</a>
+                                        <a href="#">전국 흐리고 따뜻...영서·전남 비</a>
+                                        <span class="bar"></span>
+                                        <a href="#">주간예보</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li><a href="#"><strong>학습</strong></a><a href="#">영어로 듣는 뉴스</a><span class="bar"></span><a href="#">영어톡톡</a></li>
+                                    <li><a href="#"><strong>행사</strong></a><a href="#">현재 상영 영화</a><span class="bar"></span><a href="#">스포츠 주요 경기 일정</a></li>
+                                    <li><a href="#"><strong>스포츠</strong></a><a href="#">페레스 2홈런, 클리블랜드 승리</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                    <p class="login_ad"><a href="#"><img src="resource/images/new/ad_sub.jpg" alt="로그인 광고"></a></p>
+                <div id="dddd"></div>    
+                <div id="post_box">
+                    <h3 class="hidden">네이버 포스트</h3>
+                    <div class="post_header">
+                        <button><i></i><span class="hidden">post_map</span></button>
+                        <div class="post_wrap">
+                            <ul class="post_menu">
+                                <li class="p_live on"><a href="#"><i></i><span class="hidden">리빙</span></a></li>
+                                <li class="p_food"><a href="#"><i></i><span class="hidden">푸드</span></a></li>
+                                <li class="p_sport"><a href="#"><i></i><span class="hidden">스포츠</span></a></li>
+                                <li class="p_car"><a href="#"><i></i><span class="hidden">차/테크</span></a></li>
+                                <li class="p_fas"><a href="#"><i></i><span class="hidden">패션뷰티</span></a></li>
+                                <li class="p_mam"><a href="#"><i></i><span class="hidden">맘/키즈</span></a></li>
+                                <li class="p_health"><a href="#"><i></i><span class="hidden">건강</span></a></li>
+                                <li class="p_web"><a href="#"><i></i><span class="hidden">웹툰</span></a></li>
+                                <li class="p_game"><a href="#"><i></i><span class="hidden">게임</span></a></li>
+                                <li class="p_tv"><a href="#"><i></i><span class="hidden">TV/연예</span></a></li>
+                                <li class="p_music"><a href="#"><i></i><span class="hidden">뮤직</span></a></li>
+                                <li class="p_movie"><a href="#"><i></i><span class="hidden">영화</span></a></li>
+                                <li class="p_book"><a href="#"><i></i><span class="hidden">책/문화</span></a></li>
+                                <li class="p_with"><a href="#"><i></i><span class="hidden">함께N</span></a></li>
+                                <li class="p_tour"><a href="#"><i></i><span class="hidden">여행+</span></a></li>
+                                <li class="p_design"><a href="#"><i></i><span class="hidden">디자인</span></a></li>
+                                <li class="p_eco"><a href="#"><i></i><span class="hidden">경제M</span></a></li>
+                                <li class="p_job"><a href="#"><i></i><span class="hidden">JOB</span></a></li>
+                                <li class="p_sci"><a href="#"><i></i><span class="hidden">과학</span></a></li>
+                                <li class="p_brain"><a href="#"><i></i><span class="hidden">지식/교양</span></a></li>
+                                <li class="p_china"><a href="#"><i></i><span class="hidden">중국</span></a></li>
+                                <li class="p_biz"><a href="#"><i></i><span class="hidden">비즈니스</span></a></li>
+                                <li class="p_farm"><a href="#"><i></i><span class="hidden">FARM</span></a></li>
+                                <li class="p_school"><a href="#"><i></i><span class="hidden">스쿨잼</span></a></li>
+                            </ul>
+                            <span class="left_opa"></span>
+                            <span class="right_opa"></span>
+                        </div>
+                        <div class="post_pager">
+                            <div class="page_arrow">
+                                <a href="#" class="pre"><p></p><span class="hidden">이전</span></a>
+                                <a href="#" class="next"><p></p><span class="hidden">다음</span></a>
                             </div>
                         </div>
                     </div>
-                    <p class="login_ad"><a href="#"><img src="resource/images/hero.jpg" alt="로그인 광고"></a></p>
-                </div>
-                <div id="post_box">
-                    <h3 class="hidden">네이버 포스트</h3>
-                    <ul class="post_menu">
-                        <li class="p_live on"><a href="#">리빙</a></li>
-                        <li class="p_food"><a href="#">푸드</a></li>
-                        <li class="p_sport"><a href="#">스포츠</a></li>
-                        <li class="p_car"><a href="#">차/테크</a></li>
-                        <li class="p_fas"><a href="#">패션뷰티</a></li>
-                        <li class="p_web"><a href="#">웹툰</a></li>
-                        <li class="p_game"><a href="#">게임</a></li>
-                        <li class="p_tv"><a href="#">TV/연예</a></li>
-                        <li class="p_music"><a href="#">뮤직</a></li>
-                        <li class="p_movie"><a href="#">영화</a></li>
-                        <li class="p_book"><a href="#">책/문화</a></li>
-                        <li class="p_brain"><a href="#">지식/교양</a></li>
-                        <li class="p_divide"><a href="#">공익/나눔</a></li>
-                    </ul>
-
                     <ul class="post_con on">
+                        <li class="post_link">
+                            <h4><span class="hidden">리빙</span></h4>
+                            <span class="v_bar"></span>
+                            <ul>
+                                <li><a href="#">인테리어</a></li>
+                                <li><a href="#">생활TIP</a></li>
+                                <li><a href="#">원예/정원</a></li>
+                                <li><a href="#">애완/반려</a></li>
+                                <li><a href="#">공식 블로그</a></li>
+                            </ul>
+                        </li>
                         <li class="post_colspan">
-                            <a href="#"><img src="resource/images/post_img/living/living01.jpg" alt=""><p><span>남해로 귀촌한 30대 부부</span><strong>손때 묻은 시골 라이프</strong></p></a>
+                            <a href="#"><img src="resource/images/post_img/living/living01.jpg" alt=""><span class="dim"></span><p><span>남해로 귀촌한 30대 부부</span><strong>손때 묻은 시골 라이프</strong></p></a>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/living/living02.jpg" alt=""><strong>샤워기 호품, 행주에 자수 더하기</strong></a>
-                            <span>블로그<span class="bar"> | </span>새미</span>
+                            <span>블로그<span class="bar"></span>새미</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/living/living03.jpg" alt=""><strong>최소한으로 꾸민 겨울 인테리어에요</strong></a>
-                            <span>블로그<span class="bar"> | </span>깍쟁이</span>
+                            <span>블로그<span class="bar"></span>깍쟁이</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/living/living04.jpg" alt=""><strong>아이와 함께하는 거실 셀프 페인팅</strong></a>
-                            <span>블로그<span class="bar"> | </span>블루언니</span>
+                            <span>블로그<span class="bar"></span>블루언니</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/living/living05.jpg" alt=""><strong>버리고 비우며 미니멀한 주방 만들기</strong></a>
-                            <span>블로그<span class="bar"> | </span>나나</span>
+                            <span>블로그<span class="bar"></span>나나</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/living/living06.png" alt=""><strong>현지인처럼 여행, 비엔나 시장 구경</strong></a>
-                            <span>포스트<span class="bar"> | </span>파리새댁</span>
+                            <span>포스트<span class="bar"></span>파리새댁</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/living/living07.jpg" alt=""><strong>2016 서울홈테이블데코페어로 GO!</strong></a>
@@ -270,101 +343,97 @@
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/living/living08.jpg" alt=""><strong>남편이 직접 꾸민 욕실 셀프 인테리어</strong></a>
-                            <span>블로그<span class="bar"> | </span>꿈꾸는오로라</span>
+                            <span>블로그<span class="bar"></span>꿈꾸는오로라</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/living/living09.jpg" alt=""><strong>우리 집 작디작은 나만의 작은 공간</strong></a>
-                            <span>블로그<span class="bar"> | </span>루시</span>
+                            <span>블로그<span class="bar"></span>루시</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/living/living10.jpg" alt=""><strong>귀여운 프랑스 자수 양말에 새겨 넣기</strong></a>
-                            <span>블로그<span class="bar"> | </span>스텔라</span>
+                            <span>블로그<span class="bar"></span>스텔라</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/living/living11.jpg" alt=""><strong>셀프 웨인스코팅<br>모던 클래식한 거실</strong></a>
-                            <span>블로그<span class="bar"> | </span>JD</span>
+                            <span>블로그<span class="bar"></span>JD</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/living/living12.jpg" alt=""><strong>한 번에 끝내는 다림질 노하우</strong></a>
-                            <span>블로그<span class="bar"> | </span>디자인해</span>
+                            <span>블로그<span class="bar"></span>디자인해</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/living/living13.jpg" alt=""><strong>반짝반짝 탄 냄비 새로 태어났어요</strong></a>
-                            <span>블로그<span class="bar"> | </span>핫모카</span>
+                            <span>블로그<span class="bar"></span>핫모카</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/living/living14.jpg" alt=""><strong>소소하지만 유용한 김빠진 맥주 활용법</strong></a>
-                            <span>블로그<span class="bar"> | </span>낭만주부</span>
-                        </li>
-                        <li>
-                            <a href="#"><img src="resource/images/post_img/living/living15.png" alt=""><strong>겨울에 딱 좋은 전세계 온천 베스트 8</strong></a>
-                            <span>포스트<span class="bar"> | </span>에이비로드</span>
+                            <span>블로그<span class="bar"></span>낭만주부</span>
                         </li>
                     </ul>
                     <ul class="post_con">
                         <li class="post_colspan">
-                            <a href="#"><img src="resource/images/post_img/food/food01.JPEG" alt=""><p><span>은근히 어려운 김치볶음밥</span><strong>이젠 걱정 업이 만들어요</strong></p></a>
+                            <a href="#"><img src="resource/images/post_img/food/food01.JPEG" alt=""><span class="dim"></span><p><span>은근히 어려운 김치볶음밥</span><strong>이젠 걱정 업이 만들어요</strong></p></a>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/food/food02.JPEG" alt=""><strong>와인, 더 품격 있게 즐기는 법</strong></a>
-                            <span>TV캐스트<span class="bar"> | </span>푸드캐스트</span>
+                            <span>TV캐스트<span class="bar"></span>푸드캐스트</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/food/food03.JPEG" alt=""><strong>시원하게 속이 확 풀리는 굴 국밥</strong></a>
-                            <span>블로그<span class="bar"> | </span>세라</span>
+                            <span>블로그<span class="bar"></span>세라</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/food/food04.JPEG" alt=""><strong>아이들을 위한 매콤달콤 땅콩 두부강정</strong></a>
-                            <span>블로그<span class="bar"> | </span>행복한 곰돌씨</span>
+                            <span>블로그<span class="bar"></span>행복한 곰돌씨</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/food/food05.JPEG" alt=""><strong>비상 식재료로 좋은 자반고등어 보관법</strong></a>
-                            <span>블로그<span class="bar"> | </span>행복꿈꾸리</span>
+                            <span>블로그<span class="bar"></span>행복꿈꾸리</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/food/food06.JPEG" alt=""><strong>몸에 좋은 파프리카 남김없이 사용하기</strong></a>
-                            <span>블로그<span class="bar"> | </span>메이린</span>
+                            <span>블로그<span class="bar"></span>메이린</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/food/food07.JPEG" alt=""><strong>매콤달달 이색피자, 고추장또띠아피자</strong></a>
-                            <span>TV캐스트<span class="bar"> | </span>핸디쿡</span>
+                            <span>TV캐스트<span class="bar"></span>핸디쿡</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/food/food08.JPEG" alt=""><strong>먹기 좋은 달콤한 크림 브륄레 타르트</strong></a>
-                            <span>TV캐스트<span class="bar"> | </span>한세의 일상.</span>
+                            <span>TV캐스트<span class="bar"></span>한세의 일상.</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/food/food09.JPEG" alt=""><strong>귀여운 선물로 미니 하트 설기 어때요?</strong></a>
-                            <span>포스트<span class="bar"> | </span>장선영 파티쉐</span>
+                            <span>포스트<span class="bar"></span>장선영 파티쉐</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/food/food10.JPEG" alt=""><strong>프랑스의 시골 파이 '아쉬 빠흐멍띠에'</strong></a>
-                            <span>블로그<span class="bar"> | </span>김동기 셰프</span>
+                            <span>블로그<span class="bar"></span>김동기 셰프</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/food/food11.JPEG" alt=""><strong>외국에 온 줄 알았어, 이국적인 맛집</strong></a>
-                            <span>포스트<span class="bar"> | </span>디너의여왕</span>
+                            <span>포스트<span class="bar"></span>디너의여왕</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/food/food12.JPEG" alt=""><strong>올해는 어느 동네 맛집이 뜰까?</strong></a>
-                            <span>포스트<span class="bar"> | </span>망고플레이트</span>
+                            <span>포스트<span class="bar"></span>망고플레이트</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/food/food13.JPEG" alt=""><strong>자랑하고 싶은 유니버셜 스튜디오 간식</strong></a>
-                            <span>포스트<span class="bar"> | </span>대학내일</span>
+                            <span>포스트<span class="bar"></span>대학내일</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/food/food14.JPEG" alt=""><strong>2017년 푸드 트렌드 이끌 슈퍼푸드 채소</strong></a>
-                            <span>뉴스<span class="bar"> | </span>헤럴드경제</span>
+                            <span>뉴스<span class="bar"></span>헤럴드경제</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/food/food15.JPEG" alt=""><strong>치즈 쭉쭉 3단 토스트 만들기</strong></a>
-                            <span>TV캐스트<span class="bar"> | </span>아이디어 키친</span>
+                            <span>TV캐스트<span class="bar"></span>아이디어 키친</span>
                         </li>
                     </ul> 
                     <ul class="post_con">
                         <li class="post_colspan">
-                            <a href="#"><img src="resource/images/post_img/sport/sport01.jpg" alt=""><p><span>김형준의 베이스볼+</span><strong>'ML 평균' 오승환 패스트볼의 비밀</strong></p></a>
+                            <a href="#"><img src="resource/images/post_img/sport/sport01.jpg" alt=""><span class="dim"></span><p><span>김형준의 베이스볼+</span><strong>'ML 평균' 오승환 패스트볼의 비밀</strong></p></a>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/sport/sport02.jpg" alt=""><strong>또 다시 숫자를<br>선택한 애리조나</strong></a>
@@ -425,23 +494,23 @@
                     </ul>
                     <ul class="post_con">
                         <li class="post_colspan">
-                            <a href="#"><img src="resource/images/post_img/car/car01.jpg" alt=""><p><strong>삼성전자가 게이밍 노트북을 공개했다고?</strong></p></a>
+                            <a href="#"><img src="resource/images/post_img/car/car01.jpg" alt=""><span class="dim"></span><p><strong>삼성전자가 게이밍 노트북을 공개했다고?</strong></p></a>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/car/car02.jpg" alt=""><strong>폭스바겐 I.D. 버즈 콘셉트</strong></a>
-                            <span>카미디어<span class="bar"> | </span>컨셉트카</span>
+                            <span>카미디어<span class="bar"></span>컨셉트카</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/car/car03.jpg" alt=""><strong>전화 목소리 잡는 스마트한 마스크?!</strong></a>
-                            <span>이지이<span class="bar"> | </span>가젯</span>
+                            <span>이지이<span class="bar"></span>가젯</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/car/car04.jpg" alt=""><strong>링컨 10세대 컨티넨탈 3.0 V6 AWD</strong></a>
-                            <span>글로벌오토뉴스<span class="bar"> | </span>시승기</span>
+                            <span>글로벌오토뉴스<span class="bar"></span>시승기</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/car/car05.jpg" alt=""><strong>아이폰8 다음 제거 요소는 스피커</strong></a>
-                            <span>이퓨<span class="bar"> | </span>스마트폰</span>
+                            <span>이퓨<span class="bar"></span>스마트폰</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/car/car06.jpg" alt=""><strong>엘레폰 S8 출시 예정!</strong></a>
@@ -449,231 +518,355 @@
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/car/car07.jpg" alt=""><strong>쉐보레 대형 SUV 트래버스</strong></a>
-                            <span>로드테스트<span class="bar"> | </span>테마</span>
+                            <span>로드테스트<span class="bar"></span>테마</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/car/car08.jpg" alt=""><strong>ASUS 트랜스포머 T102HA 성능은?</strong></a>
-                            <span>딴트공<span class="bar"> | </span>태블릿노트북</span>
+                            <span>딴트공<span class="bar"></span>태블릿노트북</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/car/car09.jpg" alt=""><strong>미니멀리즘 극대화 뱅가드 로드스터</strong></a>
-                            <span>모터바이크<span class="bar"> | </span>테마</span>
+                            <span>모터바이크<span class="bar"></span>테마</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/car/car10.jpg" alt=""><strong>그 시절, 우리가 좋아했던 첫차</strong></a>
-                            <span>VIEW H<span class="bar"> | </span>테마</span>
+                            <span>VIEW H<span class="bar"></span>테마</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/car/car11.jpg" alt=""><strong>윈도우 Ctrl 단축키 활용하기</strong></a>
-                            <span>맥가이버<span class="bar"> | </span>Tip</span>
+                            <span>맥가이버<span class="bar"></span>Tip</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/car/car12.jpg" alt=""><strong>벤틀리 컨티넨탈 슈퍼 스포츠</strong></a>
-                            <span>오토트리뷴<span class="bar"> | </span>테마</span>
+                            <span>오토트리뷴<span class="bar"></span>테마</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/car/car13.jpg" alt=""><strong>스마트 화력조절 손잡이, 'Inirv React'</strong></a>
-                            <span>긱스타터<span class="bar"> | </span>가젯</span>
+                            <span>긱스타터<span class="bar"></span>가젯</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/car/car14.jpg" alt=""><strong>HTC의 Vive 스마트폰, 재기 노린다</strong></a>
-                            <span>비에르쥬<span class="bar"> | </span>칼럼</span>
+                            <span>비에르쥬<span class="bar"></span>칼럼</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/car/car15.jpg" alt=""><strong>기아 쏘울, 독일에서는 왜?</strong></a>
-                            <span>핀카스토리<span class="bar"> | </span>테마</span>
+                            <span>핀카스토리<span class="bar"></span>테마</span>
                         </li>
                     </ul>
                     <ul class="post_con">
                         <li class="post_colspan">
-                            <a href="#"><img src="resource/images/post_img/buti/buti01.gif" alt=""><p><span>뷰★스타 주민님아의 </span><strong>지드래곤 헤어 스타일 따라잡기</strong></p></a>
+                            <a href="#"><img src="resource/images/post_img/buti/buti01.gif" alt=""><span class="dim"></span><p><span>뷰★스타 주민님아의<strong>지드래곤 헤어 스타일 따라잡기</strong></p></a>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/buti/buti02.gif" alt=""><strong>발렌타인 선물로 딱<br>남친을 위한 뷰티템</strong></a>
-                            <span>포스트<span class="bar"> | </span>뷰티톡</span>
+                            <span>포스트<span class="bar"></span>뷰티톡</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/buti/buti03.jpg" alt=""><strong>겨울에 딱 좋아 여신 웨이브 스타일</strong></a>
-                            <span>폴라<span class="bar"> | </span>헤어멘토 정진희</span>
+                            <span>폴라<span class="bar"></span>헤어멘토 정진희</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/buti/buti04.jpg" alt=""><strong>2017 트렌드 컬러 그리너리 메이크업</strong></a>
-                            <span>포스트<span class="bar"> | </span>뷰★스타 퍼플</span>
+                            <span>포스트<span class="bar"></span>뷰★스타 퍼플</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/buti/buti05.gif" alt=""><strong>겨울 데일리 룩으로 무채색 코디 추천</strong></a>
-                            <span>뷰티TV<span class="bar"> | </span>뷰★스타 쿠키</span>
+                            <span>뷰티TV<span class="bar"></span>뷰★스타 쿠키</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/buti/buti06.jpg" alt=""><strong>삼각김밥 탈출하는 일자 단발 스타일링</strong></a>
-                            <span>뷰티TV<span class="bar"> | </span>그로잉살롱</span>
+                            <span>뷰티TV<span class="bar"></span>그로잉살롱</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/buti/buti07.gif" alt=""><strong>2월 로드샵 세일 이건 꼭 사야해</strong></a>
-                            <span>포스트<span class="bar"> | </span>뷰티쏘식</span>
+                            <span>포스트<span class="bar"></span>뷰티쏘식</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/buti/buti08.gif" alt=""><strong>립 덕후가 애정하는 최애템 발색샷 모음</strong></a>
-                            <span>포스트<span class="bar"> | </span>뷰★스타 리미</span>
+                            <span>포스트<span class="bar"></span>뷰★스타 리미</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/buti/buti09.jpg" alt=""><strong>탈색 후 톤 다운은 애시 브라운이 정답</strong></a>
-                            <span>폴라<span class="bar"> | </span>헤어멘토 중연</span>
+                            <span>폴라<span class="bar"></span>헤어멘토 중연</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/buti/buti10.gif" alt=""><strong>피부 커버 갑! 학생 메이크업 추천</strong></a>
-                            <span>뷰티TV<span class="bar"> | </span>뷰★스타 후니언</span>
+                            <span>뷰티TV<span class="bar"></span>뷰★스타 후니언</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/buti/buti11.jpg" alt=""><strong>긴 생머리에 어울려 청초한 메이크업</strong></a>
-                            <span>뷰티TV<span class="bar"> | </span>뷰★스타 애림</span>
+                            <span>뷰티TV<span class="bar"></span>뷰★스타 애림</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/buti/buti12.jpg" alt=""><strong>볼살을 커버하는 레이어드 컷과 펌</strong></a>
-                            <span>폴라<span class="bar"> | </span>헤어멘토 시현</span>
+                            <span>폴라<span class="bar"></span>헤어멘토 시현</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/buti/buti13.gif" alt=""><strong>내 피부 톤에 맞는 블러셔 고르는 법</strong></a>
-                            <span>블로그<span class="bar"> | </span>뷰★스타 짱세</span>
+                            <span>블로그<span class="bar"></span>뷰★스타 짱세</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/buti/buti14.gif" alt=""><strong>곰손도 가능하다 초간단 여신 웨이브</strong></a>
-                            <span>뷰티TV<span class="bar"> | </span>뷰★스타 하이</span>
+                            <span>뷰티TV<span class="bar"></span>뷰★스타 하이</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/buti/buti15.gif" alt=""><strong>지겨운 롱 패딩보다 짧은 패딩 어때?</strong></a>
-                            <span>포스트<span class="bar"> | </span>스타일쉐어</span>
-                        </li>
-                    </ul>
-                    <ul class="post_con">
-                        <li class="post_normal">
-                            <a href="#"><strong>한 주의 시작 월요웹툰 <br>바로보기</strong><span>오늘의 웹툰 보기</span></a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="resource/images/post_img/webtoon/webtoon01.jpg" alt=""><strong>너 어미니가<br>별말씀 안 하시냐</strong></a>
-                            <span>윈드브레이커<span class="bar"> | </span>조용석</span>
-                        </li>
-                        <li>
-                            <a href="#"><img src="resource/images/post_img/webtoon/webtoon02.jpg" alt=""><strong>[컴백] 송곳 5부<br>이 시대 '을'이야기</strong></a>
-                            <span>송곳 4-5부<span class="bar"> | </span>최규석</span>
-                        </li>
-                        <li>
-                            <a href="#"><img src="resource/images/post_img/webtoon/webtoon03.jpg" alt=""><strong>치사하고 악랄한 기술입니다</strong></a>
-                            <span>신의 탑<span class="bar"> | </span>SIU</span>
-                        </li>
-                        <li>
-                            <a href="#"><img src="resource/images/post_img/webtoon/webtoon01.jpg" alt=""><strong>너 어미니가<br>별말씀 안 하시냐</strong></a>
-                            <span>윈드브레이커<span class="bar"> | </span>조용석</span>
-                        </li>
-                        <li>
-                            <a href="#"><img src="resource/images/post_img/webtoon/webtoon02.jpg" alt=""><strong>[컴백] 송곳 5부<br>이 시대 '을'이야기</strong></a>
-                            <span>송곳 4-5부<span class="bar"> | </span>최규석</span>
-                        </li>
-                        <li>
-                            <a href="#"><img src="resource/images/post_img/webtoon/webtoon03.jpg" alt=""><strong>치사하고 악랄한 기술입니다</strong></a>
-                            <span>신의 탑<span class="bar"> | </span>SIU</span>
-                        </li>
-                        <li>
-                            <a href="#"><img src="resource/images/post_img/webtoon/webtoon01.jpg" alt=""><strong>너 어미니가<br>별말씀 안 하시냐</strong></a>
-                            <span>윈드브레이커<span class="bar"> | </span>조용석</span>
-                        </li>
-                        <li>
-                            <a href="#"><img src="resource/images/post_img/webtoon/webtoon02.jpg" alt=""><strong>[컴백] 송곳 5부<br>이 시대 '을'이야기</strong></a>
-                            <span>송곳 4-5부<span class="bar"> | </span>최규석</span>
-                        </li>
-                        <li>
-                            <a href="#"><img src="resource/images/post_img/webtoon/webtoon03.jpg" alt=""><strong>치사하고 악랄한 기술입니다</strong></a>
-                            <span>신의 탑<span class="bar"> | </span>SIU</span>
-                        </li>
-                        <li>
-                            <a href="#"><img src="resource/images/post_img/webtoon/webtoon01.jpg" alt=""><strong>너 어미니가<br>별말씀 안 하시냐</strong></a>
-                            <span>윈드브레이커<span class="bar"> | </span>조용석</span>
-                        </li>
-                        <li>
-                            <a href="#"><img src="resource/images/post_img/webtoon/webtoon02.jpg" alt=""><strong>[컴백] 송곳 5부<br>이 시대 '을'이야기</strong></a>
-                            <span>송곳 4-5부<span class="bar"> | </span>최규석</span>
-                        </li>
-                        <li>
-                            <a href="#"><img src="resource/images/post_img/webtoon/webtoon03.jpg" alt=""><strong>치사하고 악랄한 기술입니다</strong></a>
-                            <span>신의 탑<span class="bar"> | </span>SIU</span>
-                        </li>
-                        <li>
-                            <a href="#"><img src="resource/images/post_img/webtoon/webtoon01.jpg" alt=""><strong>너 어미니가<br>별말씀 안 하시냐</strong></a>
-                            <span>윈드브레이커<span class="bar"> | </span>조용석</span>
-                        </li>
-                        <li>
-                            <a href="#"><img src="resource/images/post_img/webtoon/webtoon02.jpg" alt=""><strong>[컴백] 송곳 5부<br>이 시대 '을'이야기</strong></a>
-                            <span>송곳 4-5부<span class="bar"> | </span>최규석</span>
-                        </li>
-                        <li>
-                            <a href="#"><img src="resource/images/post_img/webtoon/webtoon03.jpg" alt=""><strong>치사하고 악랄한 기술입니다</strong></a>
-                            <span>신의 탑<span class="bar"> | </span>SIU</span>
+                            <span>포스트<span class="bar"></span>스타일쉐어</span>
                         </li>
                     </ul>
                     <ul class="post_con">
                         <li class="post_colspan">
-                            <a href="#"><img src="resource/images/post_img/game/game01.jpg" alt=""><p><strong>네이버 PC게임에서도 클로저스를!</strong></p></a>
+                            <a href="#"><img src="resource/images/new/post_img/mam01.jpeg" alt=""><span class="dim"></span><p><span>한컷공감<strong>저녁마다 큰일 | 별카피</strong></p></a>
                         </li>
                         <li>
-                            <a href="#"><img src="resource/images/post_img/game/game02.jpg" alt=""><strong>하루에 3억이 날아간 역대급 우주전쟁</strong></a>
-                            <span>캐뵤리<span class="bar"> | </span>사건파일X</span>
+                            <a href="#"><img src="resource/images/new/post_img/mam02.jpeg" alt=""><strong>아기 때부터 가까이하자! 소근육 발달 돕는 놀잇감 추천</strong></a>
+                            <span>쇼핑의 지혜<span class="bar"></span>베페</span>
                         </li>
                         <li>
-                            <a href="#"><img src="resource/images/post_img/game/game03.jpg" alt=""><strong>게이밍 모니터 보기위한 상식</strong></a>
-                            <span>리즈피아<span class="bar"> | </span>Gaming Desk</span>
+                            <a href="#"><img src="resource/images/new/post_img/mam03.jpeg" alt=""><strong>스위스에서 성공한 20개월 아이의 수면 교육 후기</strong></a>
+                            <span>해외 육아 엿보기<span class="bar"></span>쁘군엄마</span>
                         </li>
                         <li>
-                            <a href="#"><img src="resource/images/post_img/game/game04.jpg" alt=""><strong>개봉을 앞둔 게임 원작 영화는?</strong></a>
-                            <span>연결고리<span class="bar"> | </span>게임+a</span>
+                            <a href="#"><img src="resource/images/new/post_img/mam04.jpeg" alt=""><strong>죽고 싶지 않아요..슬픈 감정에도 연습이 필요해!</strong></a>
+                            <span>부모는 위대하다<span class="bar"></span>베이비조</span>
                         </li>
                         <li>
-                            <a href="#"><img src="resource/images/post_img/game/game02.jpg" alt=""><strong>하루에 3억이 날아간 역대급 우주전쟁</strong></a>
-                            <span>캐뵤리<span class="bar"> | </span>사건파일X</span>
+                            <a href="#"><img src="resource/images/new/post_img/mam02.jpeg" alt=""><strong>아기 때부터 가까이하자! 소근육 발달 돕는 놀잇감 추천</strong></a>
+                            <span>쇼핑의 지혜<span class="bar"></span>베페</span>
                         </li>
                         <li>
-                            <a href="#"><img src="resource/images/post_img/game/game03.jpg" alt=""><strong>게이밍 모니터 보기위한 상식</strong></a>
-                            <span>리즈피아<span class="bar"> | </span>Gaming Desk</span>
+                            <a href="#"><img src="resource/images/new/post_img/mam03.jpeg" alt=""><strong>스위스에서 성공한 20개월 아이의 수면 교육 후기</strong></a>
+                            <span>해외 육아 엿보기<span class="bar"></span>쁘군엄마</span>
                         </li>
                         <li>
-                            <a href="#"><img src="resource/images/post_img/game/game04.jpg" alt=""><strong>개봉을 앞둔 게임 원작 영화는?</strong></a>
-                            <span>연결고리<span class="bar"> | </span>게임+a</span>
+                            <a href="#"><img src="resource/images/new/post_img/mam04.jpeg" alt=""><strong>죽고 싶지 않아요..슬픈 감정에도 연습이 필요해!</strong></a>
+                            <span>부모는 위대하다<span class="bar"></span>베이비조</span>
                         </li>
                         <li>
-                            <a href="#"><img src="resource/images/post_img/game/game02.jpg" alt=""><strong>하루에 3억이 날아간 역대급 우주전쟁</strong></a>
-                            <span>캐뵤리<span class="bar"> | </span>사건파일X</span>
+                            <a href="#"><img src="resource/images/new/post_img/mam02.jpeg" alt=""><strong>아기 때부터 가까이하자! 소근육 발달 돕는 놀잇감 추천</strong></a>
+                            <span>쇼핑의 지혜<span class="bar"></span>베페</span>
                         </li>
                         <li>
-                            <a href="#"><img src="resource/images/post_img/game/game03.jpg" alt=""><strong>게이밍 모니터 보기위한 상식</strong></a>
-                            <span>리즈피아<span class="bar"> | </span>Gaming Desk</span>
+                            <a href="#"><img src="resource/images/new/post_img/mam03.jpeg" alt=""><strong>스위스에서 성공한 20개월 아이의 수면 교육 후기</strong></a>
+                            <span>해외 육아 엿보기<span class="bar"></span>쁘군엄마</span>
                         </li>
                         <li>
-                            <a href="#"><img src="resource/images/post_img/game/game04.jpg" alt=""><strong>개봉을 앞둔 게임 원작 영화는?</strong></a>
-                            <span>연결고리<span class="bar"> | </span>게임+a</span>
+                            <a href="#"><img src="resource/images/new/post_img/mam04.jpeg" alt=""><strong>죽고 싶지 않아요..슬픈 감정에도 연습이 필요해!</strong></a>
+                            <span>부모는 위대하다<span class="bar"></span>베이비조</span>
                         </li>
                         <li>
-                            <a href="#"><img src="resource/images/post_img/game/game02.jpg" alt=""><strong>하루에 3억이 날아간 역대급 우주전쟁</strong></a>
-                            <span>캐뵤리<span class="bar"> | </span>사건파일X</span>
+                            <a href="#"><img src="resource/images/new/post_img/mam02.jpeg" alt=""><strong>아기 때부터 가까이하자! 소근육 발달 돕는 놀잇감 추천</strong></a>
+                            <span>쇼핑의 지혜<span class="bar"></span>베페</span>
                         </li>
                         <li>
-                            <a href="#"><img src="resource/images/post_img/game/game03.jpg" alt=""><strong>게이밍 모니터 보기위한 상식</strong></a>
-                            <span>리즈피아<span class="bar"> | </span>Gaming Desk</span>
+                            <a href="#"><img src="resource/images/new/post_img/mam03.jpeg" alt=""><strong>스위스에서 성공한 20개월 아이의 수면 교육 후기</strong></a>
+                            <span>해외 육아 엿보기<span class="bar"></span>쁘군엄마</span>
                         </li>
                         <li>
-                            <a href="#"><img src="resource/images/post_img/game/game04.jpg" alt=""><strong>개봉을 앞둔 게임 원작 영화는?</strong></a>
-                            <span>연결고리<span class="bar"> | </span>게임+a</span>
+                            <a href="#"><img src="resource/images/new/post_img/mam04.jpeg" alt=""><strong>죽고 싶지 않아요..슬픈 감정에도 연습이 필요해!</strong></a>
+                            <span>부모는 위대하다<span class="bar"></span>베이비조</span>
                         </li>
                         <li>
-                            <a href="#"><img src="resource/images/post_img/game/game02.jpg" alt=""><strong>하루에 3억이 날아간 역대급 우주전쟁</strong></a>
-                            <span>캐뵤리<span class="bar"> | </span>사건파일X</span>
+                            <a href="#"><img src="resource/images/new/post_img/mam02.jpeg" alt=""><strong>아기 때부터 가까이하자! 소근육 발달 돕는 놀잇감 추천</strong></a>
+                            <span>쇼핑의 지혜<span class="bar"></span>베페</span>
                         </li>
                         <li>
-                            <a href="#"><img src="resource/images/post_img/game/game03.jpg" alt=""><strong>게이밍 모니터 보기위한 상식</strong></a>
-                            <span>리즈피아<span class="bar"> | </span>Gaming Desk</span>
+                            <a href="#"><img src="resource/images/new/post_img/mam03.jpeg" alt=""><strong>스위스에서 성공한 20개월 아이의 수면 교육 후기</strong></a>
+                            <span>해외 육아 엿보기<span class="bar"></span>쁘군엄마</span>
                         </li>
                     </ul>
                     <ul class="post_con">
                         <li class="post_colspan">
-                            <a href="#"><img src="resource/images/post_img/tv/tv01.png" alt=""><p><span>타임슬립 로맨스 &lt;빙구&gt; 5회</span><strong>"기억 났어요, 내가 왜 당신을 만났는지</strong></p></a>
+                            <a href="#"><img src="resource/images/new/post_img/health01.jpg" alt=""><span class="dim"></span><p><span>꽁꽁 닫은 창문, 미세먼지 퇴치를 위한<strong>‘공기 청정기’ 선택 가이드</strong></p></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/health02.jpg" alt=""><strong>각종 질병 막아내는 슈퍼푸드 5가지</strong></a>
+                            <span>식품·영양</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/health03.jpg" alt=""><strong>늘 찌뿌듯… 만성 피로의 원인 8가지</strong></a>
+                            <span>코메디닷컴<span class="bar"></span>권순일 기자</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/health04.jpg" alt=""><strong>살 빼려면 꼭 아침을 먹어야 하는 10가지 이유</strong></a>
+                            <span>비만은 만병의 근원</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/health02.jpg" alt=""><strong>각종 질병 막아내는 슈퍼푸드 5가지</strong></a>
+                            <span>식품·영양</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/health03.jpg" alt=""><strong>늘 찌뿌듯… 만성 피로의 원인 8가지</strong></a>
+                            <span>코메디닷컴<span class="bar"></span>권순일 기자</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/health04.jpg" alt=""><strong>살 빼려면 꼭 아침을 먹어야 하는 10가지 이유</strong></a>
+                            <span>비만은 만병의 근원</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/health02.jpg" alt=""><strong>각종 질병 막아내는 슈퍼푸드 5가지</strong></a>
+                            <span>식품·영양</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/health03.jpg" alt=""><strong>늘 찌뿌듯… 만성 피로의 원인 8가지</strong></a>
+                            <span>코메디닷컴<span class="bar"></span>권순일 기자</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/health04.jpg" alt=""><strong>살 빼려면 꼭 아침을 먹어야 하는 10가지 이유</strong></a>
+                            <span>비만은 만병의 근원</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/health02.jpg" alt=""><strong>각종 질병 막아내는 슈퍼푸드 5가지</strong></a>
+                            <span>식품·영양</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/health03.jpg" alt=""><strong>늘 찌뿌듯… 만성 피로의 원인 8가지</strong></a>
+                            <span>코메디닷컴<span class="bar"></span>권순일 기자</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/health04.jpg" alt=""><strong>살 빼려면 꼭 아침을 먹어야 하는 10가지 이유</strong></a>
+                            <span>비만은 만병의 근원</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/health02.jpg" alt=""><strong>각종 질병 막아내는 슈퍼푸드 5가지</strong></a>
+                            <span>식품·영양</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/health03.jpg" alt=""><strong>늘 찌뿌듯… 만성 피로의 원인 8가지</strong></a>
+                            <span>코메디닷컴<span class="bar"></span>권순일 기자</span>
+                        </li>
+                    </ul>
+                    <ul class="post_con webtoon">
+                        <li class="post_link">
+                            <h4><span class="hidden">웹툰</span></h4>
+                            <span class="v_bar"></span>
+                            <p><a href="#">매일 매일 새로운 재미 <br/>네이버웹툰 바로가기</a></p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/webtoon/webtoon01.jpg" alt=""><strong>너 어미니가<br>별말씀 안 하시냐</strong></a>
+                            <span>윈드브레이커<span class="bar"></span>조용석</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/webtoon/webtoon02.jpg" alt=""><strong>[컴백] 송곳 5부<br>이 시대 '을'이야기</strong></a>
+                            <span>송곳 4-5부<span class="bar"></span>최규석</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/webtoon/webtoon03.jpg" alt=""><strong>치사하고 악랄한 기술입니다</strong></a>
+                            <span>신의 탑<span class="bar"></span>SIU</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/webtoon/webtoon01.jpg" alt=""><strong>너 어미니가<br>별말씀 안 하시냐</strong></a>
+                            <span>윈드브레이커<span class="bar"></span>조용석</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/webtoon/webtoon02.jpg" alt=""><strong>[컴백] 송곳 5부<br>이 시대 '을'이야기</strong></a>
+                            <span>송곳 4-5부<span class="bar"></span>최규석</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/webtoon/webtoon03.jpg" alt=""><strong>치사하고 악랄한 기술입니다</strong></a>
+                            <span>신의 탑<span class="bar"></span>SIU</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/webtoon/webtoon01.jpg" alt=""><strong>너 어미니가<br>별말씀 안 하시냐</strong></a>
+                            <span>윈드브레이커<span class="bar"></span>조용석</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/webtoon/webtoon02.jpg" alt=""><strong>[컴백] 송곳 5부<br>이 시대 '을'이야기</strong></a>
+                            <span>송곳 4-5부<span class="bar"></span>최규석</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/webtoon/webtoon03.jpg" alt=""><strong>치사하고 악랄한 기술입니다</strong></a>
+                            <span>신의 탑<span class="bar"></span>SIU</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/webtoon/webtoon01.jpg" alt=""><strong>너 어미니가<br>별말씀 안 하시냐</strong></a>
+                            <span>윈드브레이커<span class="bar"></span>조용석</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/webtoon/webtoon02.jpg" alt=""><strong>[컴백] 송곳 5부<br>이 시대 '을'이야기</strong></a>
+                            <span>송곳 4-5부<span class="bar"></span>최규석</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/webtoon/webtoon03.jpg" alt=""><strong>치사하고 악랄한 기술입니다</strong></a>
+                            <span>신의 탑<span class="bar"></span>SIU</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/webtoon/webtoon01.jpg" alt=""><strong>너 어미니가<br>별말씀 안 하시냐</strong></a>
+                            <span>윈드브레이커<span class="bar"></span>조용석</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/webtoon/webtoon02.jpg" alt=""><strong>[컴백] 송곳 5부<br>이 시대 '을'이야기</strong></a>
+                            <span>송곳 4-5부<span class="bar"></span>최규석</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/webtoon/webtoon03.jpg" alt=""><strong>치사하고 악랄한 기술입니다</strong></a>
+                            <span>신의 탑<span class="bar"></span>SIU</span>
+                        </li>
+                    </ul>
+                    <ul class="post_con">
+                        <li class="post_colspan">
+                            <a href="#"><img src="resource/images/post_img/game/game01.jpg" alt=""><span class="dim"></span><p><strong>네이버 PC게임에서도 클로저스를!</strong></p></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/game/game02.jpg" alt=""><strong>하루에 3억이 날아간 역대급 우주전쟁</strong></a>
+                            <span>캐뵤리<span class="bar"></span>사건파일X</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/game/game03.jpg" alt=""><strong>게이밍 모니터 보기위한 상식</strong></a>
+                            <span>리즈피아<span class="bar"></span>Gaming Desk</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/game/game04.jpg" alt=""><strong>개봉을 앞둔 게임 원작 영화는?</strong></a>
+                            <span>연결고리<span class="bar"></span>게임+a</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/game/game02.jpg" alt=""><strong>하루에 3억이 날아간 역대급 우주전쟁</strong></a>
+                            <span>캐뵤리<span class="bar"></span>사건파일X</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/game/game03.jpg" alt=""><strong>게이밍 모니터 보기위한 상식</strong></a>
+                            <span>리즈피아<span class="bar"></span>Gaming Desk</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/game/game04.jpg" alt=""><strong>개봉을 앞둔 게임 원작 영화는?</strong></a>
+                            <span>연결고리<span class="bar"></span>게임+a</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/game/game02.jpg" alt=""><strong>하루에 3억이 날아간 역대급 우주전쟁</strong></a>
+                            <span>캐뵤리<span class="bar"></span>사건파일X</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/game/game03.jpg" alt=""><strong>게이밍 모니터 보기위한 상식</strong></a>
+                            <span>리즈피아<span class="bar"></span>Gaming Desk</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/game/game04.jpg" alt=""><strong>개봉을 앞둔 게임 원작 영화는?</strong></a>
+                            <span>연결고리<span class="bar"></span>게임+a</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/game/game02.jpg" alt=""><strong>하루에 3억이 날아간 역대급 우주전쟁</strong></a>
+                            <span>캐뵤리<span class="bar"></span>사건파일X</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/game/game03.jpg" alt=""><strong>게이밍 모니터 보기위한 상식</strong></a>
+                            <span>리즈피아<span class="bar"></span>Gaming Desk</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/game/game04.jpg" alt=""><strong>개봉을 앞둔 게임 원작 영화는?</strong></a>
+                            <span>연결고리<span class="bar"></span>게임+a</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/game/game02.jpg" alt=""><strong>하루에 3억이 날아간 역대급 우주전쟁</strong></a>
+                            <span>캐뵤리<span class="bar"></span>사건파일X</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/game/game03.jpg" alt=""><strong>게이밍 모니터 보기위한 상식</strong></a>
+                            <span>리즈피아<span class="bar"></span>Gaming Desk</span>
+                        </li>
+                    </ul>
+                    <ul class="post_con">
+                        <li class="post_colspan">
+                            <a href="#"><img src="resource/images/post_img/tv/tv01.png" alt=""><span class="dim"></span><p><span>타임슬립 로맨스 &lt;빙구&gt; 5회</span><strong>"기억 났어요, 내가 왜 당신을 만났는지</strong></p></a>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/tv/tv02.jpg" alt=""><strong>승재 "응가했어요" 고지용 "이러지마"</strong></a>
@@ -734,7 +927,7 @@
                     </ul>
                     <ul class="post_con">
                         <li class="post_colspan">
-                            <a href="#"><img src="resource/images/post_img/music/music01.jpg" alt=""><p><span>[단독공개] WINGS 외전 콘셉트 포토</span><strong>함께라면 웃을 수 있어! BTS 컴백포토</strong></p></a>
+                            <a href="#"><img src="resource/images/post_img/music/music01.jpg" alt=""><span class="dim"></span><p><span>[단독공개] WINGS 외전 콘셉트 포토</span><strong>함께라면 웃을 수 있어! BTS 컴백포토</strong></p></a>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/music/music02.jpg" alt=""><strong>조문근밴드가 좋아하는 음악</strong></a>
@@ -795,68 +988,68 @@
                     </ul>
                     <ul class="post_con">
                         <li class="post_colspan">
-                            <a href="#"><img src="resource/images/post_img/movie/movie01.jpg" alt=""><p><span>씨네플레이 Feature</span><strong>명작의 별별 해외판 제목들</strong></p></a>
+                            <a href="#"><img src="resource/images/post_img/movie/movie01.jpg" alt=""><span class="dim"></span><p><span>씨네플레이 Feature</span><strong>명작의 별별 해외판 제목들</strong></p></a>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/movie/movie02.jpg" alt=""><strong>‘링’ 리메이크, 북미 박스오피스 1위</strong></a>
-                            <span>뉴스<span class="bar"> | </span>마이데일리</span>
+                            <span>뉴스<span class="bar"></span>|<span class="bar"></span>마이데일리</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/movie/movie03.jpg" alt=""><strong>올해 히어로무비 6편, 누가 웃을까?</strong></a>
-                            <span>뉴스<span class="bar"> | </span>마이데일리</span>
+                            <span>뉴스<span class="bar"></span>마이데일리</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/movie/movie04.jpg" alt=""><strong>기대되는 '미녀와 야수' 실사판</strong></a>
-                            <span>포스트<span class="bar"> | </span>무비정글</span>
+                            <span>포스트<span class="bar"></span>무비정글</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/movie/movie02.jpg" alt=""><strong>‘링’ 리메이크, 북미 박스오피스 1위</strong></a>
-                            <span>뉴스<span class="bar"> | </span>마이데일리</span>
+                            <span>뉴스<span class="bar"></span>마이데일리</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/movie/movie03.jpg" alt=""><strong>올해 히어로무비 6편, 누가 웃을까?</strong></a>
-                            <span>뉴스<span class="bar"> | </span>마이데일리</span>
+                            <span>뉴스<span class="bar"></span>마이데일리</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/movie/movie04.jpg" alt=""><strong>기대되는 '미녀와 야수' 실사판</strong></a>
-                            <span>포스트<span class="bar"> | </span>무비정글</span>
+                            <span>포스트<span class="bar"></span>무비정글</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/movie/movie02.jpg" alt=""><strong>‘링’ 리메이크, 북미 박스오피스 1위</strong></a>
-                            <span>뉴스<span class="bar"> | </span>마이데일리</span>
+                            <span>뉴스<span class="bar"></span>마이데일리</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/movie/movie03.jpg" alt=""><strong>올해 히어로무비 6편, 누가 웃을까?</strong></a>
-                            <span>뉴스<span class="bar"> | </span>마이데일리</span>
+                            <span>뉴스<span class="bar"></span>마이데일리</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/movie/movie04.jpg" alt=""><strong>기대되는 '미녀와 야수' 실사판</strong></a>
-                            <span>포스트<span class="bar"> | </span>무비정글</span>
+                            <span>포스트<span class="bar"></span>무비정글</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/movie/movie02.jpg" alt=""><strong>‘링’ 리메이크, 북미 박스오피스 1위</strong></a>
-                            <span>뉴스<span class="bar"> | </span>마이데일리</span>
+                            <span>뉴스<span class="bar"></span>마이데일리</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/movie/movie03.jpg" alt=""><strong>올해 히어로무비 6편, 누가 웃을까?</strong></a>
-                            <span>뉴스<span class="bar"> | </span>마이데일리</span>
+                            <span>뉴스<span class="bar"></span>마이데일리</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/movie/movie04.jpg" alt=""><strong>기대되는 '미녀와 야수' 실사판</strong></a>
-                            <span>포스트<span class="bar"> | </span>무비정글</span>
+                            <span>포스트<span class="bar"></span>무비정글</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/movie/movie02.jpg" alt=""><strong>‘링’ 리메이크, 북미 박스오피스 1위</strong></a>
-                            <span>뉴스<span class="bar"> | </span>마이데일리</span>
+                            <span>뉴스<span class="bar"></span>마이데일리</span>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/movie/movie03.jpg" alt=""><strong>올해 히어로무비 6편, 누가 웃을까?</strong></a>
-                            <span>뉴스<span class="bar"> | </span>마이데일리</span>
+                            <span>뉴스<span class="bar"></span>마이데일리</span>
                         </li>
                     </ul>
                     <ul class="post_con">
                         <li class="post_colspan">
-                            <a href="#"><img src="resource/images/post_img/book/book01.jpg" alt=""><p><strong>영화보다 재미있는 원작소설 Best 5</strong></p></a>
+                            <a href="#"><img src="resource/images/post_img/book/book01.jpg" alt=""><span class="dim"></span><p><strong>영화보다 재미있는 원작소설 Best 5</strong></p></a>
                         </li>
                         <li>
                             <a href="#"><img src="resource/images/post_img/book/book02.jpg" alt=""><strong>전국 책방지기 추천! 선물하고 싶은 책들</strong></a>
@@ -917,237 +1110,687 @@
                     </ul>
                     <ul class="post_con">
                         <li class="post_colspan">
-                            <a href="#"><img src="resource/images/post_img/know/know01.jpg" alt=""><p><span>러시아의 대제, 표트르 1세</span><strong>서구화 개혁을 통해 강대국을 건설하다</strong></p></a>
+                            <a href="#"><img src="resource/images/post_img/nanum/nanum01.jpg" alt=""><span class="dim"></span><p><span>연탄은행 X 션 정기저금</span><strong>짙은 연탄 한 장에 담은 진한 마음</strong></p></a>
                         </li>
                         <li>
-                            <a href="#"><img src="resource/images/post_img/know/know02.jpg" alt=""><strong>딕씨가 추천하는!<br>신규 지식백과 보기</strong></a>
-                            <span>네이버 사전 공식 블로그</span>
+                            <a href="#"><img src="resource/images/post_img/nanum/nanum02.jpg" alt=""><strong>방 안이 유일한<br>놀이터입니다</strong></a>
+                            <span>한빛사랑후원회</span>
                         </li>
                         <li>
-                            <a href="#"><img src="resource/images/post_img/know/know03.jpg" alt=""><strong>중국 공군의 성장을 이끈 강력한 전투기</strong></a>
-                            <span>무기의 세계<span class="bar"> | </span>J-11</span>
+                            <a href="#"><img src="resource/images/post_img/nanum/nanum03.jpg" alt=""><strong>가족과 시간을 보내며 할 수 있는 일</strong></a>
+                            <span>공유경제</span>
                         </li>
                         <li>
-                            <a href="#"><img src="resource/images/post_img/know/know04.jpg" alt=""><strong>영국 왕실의 정원이 모두의 휴식처로</strong></a>
-                            <span>하이드 파크(Hyde Park)</span>
+                            <a href="#"><img src="resource/images/post_img/nanum/nanum04.jpg" alt=""><strong>멸종 위기에 처한<br>야생 호랑이</strong></a>
+                            <span>한국세계자연기금</span>
                         </li>
                         <li>
-                            <a href="#"><img src="resource/images/post_img/know/know02.jpg" alt=""><strong>딕씨가 추천하는!<br>신규 지식백과 보기</strong></a>
-                            <span>네이버 사전 공식 블로그</span>
+                            <a href="#"><img src="resource/images/post_img/nanum/nanum02.jpg" alt=""><strong>방 안이 유일한<br>놀이터입니다</strong></a>
+                            <span>한빛사랑후원회</span>
                         </li>
                         <li>
-                            <a href="#"><img src="resource/images/post_img/know/know03.jpg" alt=""><strong>중국 공군의 성장을 이끈 강력한 전투기</strong></a>
-                            <span>무기의 세계<span class="bar"> | </span>J-11</span>
+                            <a href="#"><img src="resource/images/post_img/nanum/nanum03.jpg" alt=""><strong>가족과 시간을 보내며 할 수 있는 일</strong></a>
+                            <span>공유경제</span>
                         </li>
                         <li>
-                            <a href="#"><img src="resource/images/post_img/know/know04.jpg" alt=""><strong>영국 왕실의 정원이 모두의 휴식처로</strong></a>
-                            <span>하이드 파크(Hyde Park)</span>
+                            <a href="#"><img src="resource/images/post_img/nanum/nanum04.jpg" alt=""><strong>멸종 위기에 처한<br>야생 호랑이</strong></a>
+                            <span>한국세계자연기금</span>
                         </li>
                         <li>
-                            <a href="#"><img src="resource/images/post_img/know/know02.jpg" alt=""><strong>딕씨가 추천하는!<br>신규 지식백과 보기</strong></a>
-                            <span>네이버 사전 공식 블로그</span>
+                            <a href="#"><img src="resource/images/post_img/nanum/nanum02.jpg" alt=""><strong>방 안이 유일한<br>놀이터입니다</strong></a>
+                            <span>한빛사랑후원회</span>
                         </li>
                         <li>
-                            <a href="#"><img src="resource/images/post_img/know/know03.jpg" alt=""><strong>중국 공군의 성장을 이끈 강력한 전투기</strong></a>
-                            <span>무기의 세계<span class="bar"> | </span>J-11</span>
+                            <a href="#"><img src="resource/images/post_img/nanum/nanum03.jpg" alt=""><strong>가족과 시간을 보내며 할 수 있는 일</strong></a>
+                            <span>공유경제</span>
                         </li>
                         <li>
-                            <a href="#"><img src="resource/images/post_img/know/know04.jpg" alt=""><strong>영국 왕실의 정원이 모두의 휴식처로</strong></a>
-                            <span>하이드 파크(Hyde Park)</span>
+                            <a href="#"><img src="resource/images/post_img/nanum/nanum04.jpg" alt=""><strong>멸종 위기에 처한<br>야생 호랑이</strong></a>
+                            <span>한국세계자연기금</span>
                         </li>
                         <li>
-                            <a href="#"><img src="resource/images/post_img/know/know02.jpg" alt=""><strong>딕씨가 추천하는!<br>신규 지식백과 보기</strong></a>
-                            <span>네이버 사전 공식 블로그</span>
+                            <a href="#"><img src="resource/images/post_img/nanum/nanum02.jpg" alt=""><strong>방 안이 유일한<br>놀이터입니다</strong></a>
+                            <span>한빛사랑후원회</span>
                         </li>
                         <li>
-                            <a href="#"><img src="resource/images/post_img/know/know03.jpg" alt=""><strong>중국 공군의 성장을 이끈 강력한 전투기</strong></a>
-                            <span>무기의 세계<span class="bar"> | </span>J-11</span>
+                            <a href="#"><img src="resource/images/post_img/nanum/nanum03.jpg" alt=""><strong>가족과 시간을 보내며 할 수 있는 일</strong></a>
+                            <span>공유경제</span>
                         </li>
                         <li>
-                            <a href="#"><img src="resource/images/post_img/know/know04.jpg" alt=""><strong>영국 왕실의 정원이 모두의 휴식처로</strong></a>
-                            <span>하이드 파크(Hyde Park)</span>
+                            <a href="#"><img src="resource/images/post_img/nanum/nanum04.jpg" alt=""><strong>멸종 위기에 처한<br>야생 호랑이</strong></a>
+                            <span>한국세계자연기금</span>
                         </li>
                         <li>
-                            <a href="#"><img src="resource/images/post_img/know/know02.jpg" alt=""><strong>딕씨가 추천하는!<br>신규 지식백과 보기</strong></a>
-                            <span>네이버 사전 공식 블로그</span>
+                            <a href="#"><img src="resource/images/post_img/nanum/nanum02.jpg" alt=""><strong>방 안이 유일한<br>놀이터입니다</strong></a>
+                            <span>한빛사랑후원회</span>
                         </li>
                         <li>
-                            <a href="#"><img src="resource/images/post_img/know/know03.jpg" alt=""><strong>중국 공군의 성장을 이끈 강력한 전투기</strong></a>
-                            <span>무기의 세계<span class="bar"> | </span>J-11</span>
+                            <a href="#"><img src="resource/images/post_img/nanum/nanum03.jpg" alt=""><strong>가족과 시간을 보내며 할 수 있는 일</strong></a>
+                            <span>공유경제</span>
                         </li>
                     </ul>
                     <ul class="post_con">
                         <li class="post_colspan">
-                            <a href="#"><img src="resource/images/post_img/nanum/nanum01.jpg" alt=""><p><span>연탄은행 X 션 정기저금</span><strong>짙은 연탄 한 장에 담은 진한 마음</strong></p></a>
+                            <a href="#"><img src="resource/images/new/post_img/tr01.jpeg" alt=""><span class="dim"></span><p><span>행복을 주는 여행지</span><strong>행운을 가져다 준다는 핫 스폿 BEST7</strong></p></a>
                         </li>
                         <li>
-                            <a href="#"><img src="resource/images/post_img/nanum/nanum02.jpg" alt=""><strong>방 안이 유일한<br>놀이터입니다</strong></a>
-                            <span>한빛사랑후원회</span>
+                            <a href="#"><img src="resource/images/new/post_img/tr02.JPG" alt=""><strong>주말에 뭐하지?<br>서울 근교 당일치기 여행</strong></a>
+                            <span>반나절 트립</span>
                         </li>
                         <li>
-                            <a href="#"><img src="resource/images/post_img/nanum/nanum03.jpg" alt=""><strong>가족과 시간을 보내며 할 수 있는 일</strong></a>
-                            <span>공유경제</span>
+                            <a href="#"><img src="resource/images/new/post_img/tr03.jpeg" alt=""><strong>여기가 런던이가!<br>박살나는 세 남자 여행</strong></a>
+                            <span>포토 트래블러</span>
                         </li>
                         <li>
-                            <a href="#"><img src="resource/images/post_img/nanum/nanum04.jpg" alt=""><strong>멸종 위기에 처한<br>야생 호랑이</strong></a>
-                            <span>한국세계자연기금</span>
+                            <a href="#"><img src="resource/images/new/post_img/tr04.jpeg" alt=""><strong>필리핀 하면 떠오르는 곳?<br>거기말고 다른 곳!</strong></a>
+                            <span>앉아서 세계속으로</span>
                         </li>
                         <li>
-                            <a href="#"><img src="resource/images/post_img/nanum/nanum02.jpg" alt=""><strong>방 안이 유일한<br>놀이터입니다</strong></a>
-                            <span>한빛사랑후원회</span>
+                            <a href="#"><img src="resource/images/new/post_img/tr02.JPG" alt=""><strong>주말에 뭐하지?<br>서울 근교 당일치기 여행</strong></a>
+                            <span>반나절 트립</span>
                         </li>
                         <li>
-                            <a href="#"><img src="resource/images/post_img/nanum/nanum03.jpg" alt=""><strong>가족과 시간을 보내며 할 수 있는 일</strong></a>
-                            <span>공유경제</span>
+                            <a href="#"><img src="resource/images/new/post_img/tr03.jpeg" alt=""><strong>여기가 런던이가!<br>박살나는 세 남자 여행</strong></a>
+                            <span>포토 트래블러</span>
                         </li>
                         <li>
-                            <a href="#"><img src="resource/images/post_img/nanum/nanum04.jpg" alt=""><strong>멸종 위기에 처한<br>야생 호랑이</strong></a>
-                            <span>한국세계자연기금</span>
+                            <a href="#"><img src="resource/images/new/post_img/tr04.jpeg" alt=""><strong>필리핀 하면 떠오르는 곳?<br>거기말고 다른 곳!</strong></a>
+                            <span>앉아서 세계속으로</span>
                         </li>
                         <li>
-                            <a href="#"><img src="resource/images/post_img/nanum/nanum02.jpg" alt=""><strong>방 안이 유일한<br>놀이터입니다</strong></a>
-                            <span>한빛사랑후원회</span>
+                            <a href="#"><img src="resource/images/new/post_img/tr02.JPG" alt=""><strong>주말에 뭐하지?<br>서울 근교 당일치기 여행</strong></a>
+                            <span>반나절 트립</span>
                         </li>
                         <li>
-                            <a href="#"><img src="resource/images/post_img/nanum/nanum03.jpg" alt=""><strong>가족과 시간을 보내며 할 수 있는 일</strong></a>
-                            <span>공유경제</span>
+                            <a href="#"><img src="resource/images/new/post_img/tr03.jpeg" alt=""><strong>여기가 런던이가!<br>박살나는 세 남자 여행</strong></a>
+                            <span>포토 트래블러</span>
                         </li>
                         <li>
-                            <a href="#"><img src="resource/images/post_img/nanum/nanum04.jpg" alt=""><strong>멸종 위기에 처한<br>야생 호랑이</strong></a>
-                            <span>한국세계자연기금</span>
+                            <a href="#"><img src="resource/images/new/post_img/tr04.jpeg" alt=""><strong>필리핀 하면 떠오르는 곳?<br>거기말고 다른 곳!</strong></a>
+                            <span>앉아서 세계속으로</span>
                         </li>
                         <li>
-                            <a href="#"><img src="resource/images/post_img/nanum/nanum02.jpg" alt=""><strong>방 안이 유일한<br>놀이터입니다</strong></a>
-                            <span>한빛사랑후원회</span>
+                            <a href="#"><img src="resource/images/new/post_img/tr02.JPG" alt=""><strong>주말에 뭐하지?<br>서울 근교 당일치기 여행</strong></a>
+                            <span>반나절 트립</span>
                         </li>
                         <li>
-                            <a href="#"><img src="resource/images/post_img/nanum/nanum03.jpg" alt=""><strong>가족과 시간을 보내며 할 수 있는 일</strong></a>
-                            <span>공유경제</span>
+                            <a href="#"><img src="resource/images/new/post_img/tr03.jpeg" alt=""><strong>여기가 런던이가!<br>박살나는 세 남자 여행</strong></a>
+                            <span>포토 트래블러</span>
                         </li>
                         <li>
-                            <a href="#"><img src="resource/images/post_img/nanum/nanum04.jpg" alt=""><strong>멸종 위기에 처한<br>야생 호랑이</strong></a>
-                            <span>한국세계자연기금</span>
+                            <a href="#"><img src="resource/images/new/post_img/tr04.jpeg" alt=""><strong>필리핀 하면 떠오르는 곳?<br>거기말고 다른 곳!</strong></a>
+                            <span>앉아서 세계속으로</span>
                         </li>
                         <li>
-                            <a href="#"><img src="resource/images/post_img/nanum/nanum02.jpg" alt=""><strong>방 안이 유일한<br>놀이터입니다</strong></a>
-                            <span>한빛사랑후원회</span>
+                            <a href="#"><img src="resource/images/new/post_img/tr02.JPG" alt=""><strong>주말에 뭐하지?<br>서울 근교 당일치기 여행</strong></a>
+                            <span>반나절 트립</span>
                         </li>
                         <li>
-                            <a href="#"><img src="resource/images/post_img/nanum/nanum03.jpg" alt=""><strong>가족과 시간을 보내며 할 수 있는 일</strong></a>
-                            <span>공유경제</span>
+                            <a href="#"><img src="resource/images/new/post_img/tr03.jpeg" alt=""><strong>여기가 런던이가!<br>박살나는 세 남자 여행</strong></a>
+                            <span>포토 트래블러</span>
                         </li>
                     </ul>
-                    <div class="post_footer">
-                        <a href="#">선호주제설정</a>
-                        <ul class="on">
-                            <li><a href="#">인테리어</a></li>
-                            <li><a href="#">디자인</a></li>
-                            <li><a href="#">생활 Tip</a></li>
-                            <li><a href="#">리빙윈도</a></li>
-                            <li><a href="#">원예/정원</a></li>
-                            <li><a href="#">애완/반려</a></li>
-                            <li><a href="#">여행/맛집</a></li>
-                        </ul>	
-                        <ul>
-                            <li><a href="#">푸드/레시피</a></li>
-                            <li><a href="#">음식백과</a></li>
-                            <li><a href="#">푸드윈도</a></li>
-                        </ul>	
-                        <ul>
-                            <li><a href="#">야구</a></li>
-                            <li><a href="#">해외야구</a></li>
-                            <li><a href="#">축구</a></li>
-                            <li><a href="#">해외축구</a></li>
-                            <li><a href="#">농구</a></li>
-                            <li><a href="#">배구</a></li>
-                            <li><a href="#">골프</a></li>
-                            <li><a href="#">일반</a></li>
-                            <li><a href="#">e스포츠</a></li>
-                            <li><a href="#">게임</a></li>
-                        </ul>	
-                        <ul>
-                            <li><a href="#">자동차 비교</a></li>
-                            <li><a href="#">시승기</a></li>
-                            <li><a href="#">테크 핫 이슈</a></li>
-                            <li><a href="#">자동차/테크 매거진</a></li>
-                            <li><a href="#">테크 에디터</a></li>
-                        </ul>	
-                        <ul>
-                            <li><a href="#">뷰티윈도</a></li>
-                            <li><a href="#">V뷰티</a></li>
-                            <li><a href="#">뷰스타리그</a></li>
-                            <li><a href="#">패션뷰티 매거진</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#">요일별 웹툰</a></li>
-                            <li><a href="#">베스트 도전</a></li>
-                            <li><a href="#">도전 만화</a></li>
-                            <li><a href="#">단행본 만화</a></li>
-                            <li><a href="#">장르소설</a></li>
-                            <li><a href="#">웹소설</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#">온라인 게임</a></li>
-                            <li><a href="#">게임 TV</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#">네이버TV 홈</a></li>
-                            <li><a href="#">TOP100</a></li>
-                            <li><a href="#">N스토어</a></li>
-                            <li><a href="#">나의 구독채널</a></li>
-                            <li><a href="#">웹드라마TV</a></li>
-                            <li><a href="#">웹예능TV</a></li>
-                            <li><a href="#">멀티트랙</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#">TOP100</a></li>
-                            <li><a href="#">오늘의 뮤직</a></li>
-                            <li><a href="#">뮤지션 리그</a></li>
-                            <li><a href="#">음악 감상회</a></li>
-                            <li><a href="#">온스테이지</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#">영화홈</a></li>
-                            <li><a href="#">현재상영작</a></li>
-                            <li><a href="#">개봉예정작</a></li>
-                            <li><a href="#">인디극장</a></li>
-                            <li><a href="#">영화 다운로드</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#">베스트셀러</a></li>
-                            <li><a href="#">책문화 블로그</a></li>
-                            <li><a href="#">북캐스트</a></li>
-                            <li><a href="#">eBook</a></li>
-                            <li><a href="#">공연</a></li>
-                            <li><a href="#">전시 예매</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#">네이버캐스트홈</a></li>
-                            <li><a href="#">지식백과</a></li>
-                            <li><a href="#">열린연단</a></li>
-                            <li><a href="#">강연신청</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#">해피빈홈</a></li>
-                            <li><a href="#">기부하기</a></li>
-                            <li><a href="#">콩저금 캠페인</a></li>
-                            <li><a href="#">크라우드 펀딩</a></li>
-                            <li><a href="#">따뜻한 세상 뉴스</a></li>
-                        </ul>
-                        <div class="page_arrow">
-                            <p><span>1</span>/13</p>
-                            <a href="#">이전</a>
-                            <a href="#">다음</a>
-                        </div>
-                    </div>
+                    <ul class="post_con">
+                        <li class="post_colspan">
+                            <a href="#"><img src="resource/images/new/post_img/de01.jpeg" alt=""><span class="dim"></span><p><span>Oh! 크리에이터 '스티키몬스터랩' vol.3</span><strong>[이벤트] 10만 원 상당, SML 신상 램프를 드립니다!</strong></p></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/de02.jpeg" alt=""><strong>원래 있던 것처럼 자연스러운 건축 - 홍현 북촌마을 안내소</strong></a>
+                            <span>디자인 에세이</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/de03.jpeg" alt=""><strong>그리는 행위 그 자체를 그린 그림</strong></a>
+                            <span>아트윈도</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/de04.jpeg" alt=""><strong>쇠비누로 쓱쓱,<br>그 순간 비린내가 사라졌다</strong></a>
+                            <span>생활 디자인</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/de02.jpeg" alt=""><strong>원래 있던 것처럼 자연스러운 건축 - 홍현 북촌마을 안내소</strong></a>
+                            <span>디자인 에세이</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/de03.jpeg" alt=""><strong>그리는 행위 그 자체를 그린 그림</strong></a>
+                            <span>아트윈도</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/de04.jpeg" alt=""><strong>쇠비누로 쓱쓱,<br>그 순간 비린내가 사라졌다</strong></a>
+                            <span>생활 디자인</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/de02.jpeg" alt=""><strong>원래 있던 것처럼 자연스러운 건축 - 홍현 북촌마을 안내소</strong></a>
+                            <span>디자인 에세이</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/de03.jpeg" alt=""><strong>그리는 행위 그 자체를 그린 그림</strong></a>
+                            <span>아트윈도</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/de04.jpeg" alt=""><strong>쇠비누로 쓱쓱,<br>그 순간 비린내가 사라졌다</strong></a>
+                            <span>생활 디자인</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/de02.jpeg" alt=""><strong>원래 있던 것처럼 자연스러운 건축 - 홍현 북촌마을 안내소</strong></a>
+                            <span>디자인 에세이</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/de03.jpeg" alt=""><strong>그리는 행위 그 자체를 그린 그림</strong></a>
+                            <span>아트윈도</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/de04.jpeg" alt=""><strong>쇠비누로 쓱쓱,<br>그 순간 비린내가 사라졌다</strong></a>
+                            <span>생활 디자인</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/de02.jpeg" alt=""><strong>원래 있던 것처럼 자연스러운 건축 - 홍현 북촌마을 안내소</strong></a>
+                            <span>디자인 에세이</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/de03.jpeg" alt=""><strong>그리는 행위 그 자체를 그린 그림</strong></a>
+                            <span>아트윈도</span>
+                        </li>
+                    </ul>
+                    <ul class="post_con">
+                        <li class="post_colspan">
+                            <a href="#"><img src="resource/images/new/post_img/ec01.jpeg" alt=""><span class="dim"></span><p><span>지하철 정기승차권, 조조할인 등</span><strong>서울시 대중교통 할인받는 꿀팁은?</strong></p></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/ec02.jpeg" alt=""><strong>'싸구려만 사지 않는다'<br>돈 쌓이는 작은 습관 9</strong></a>
+                            <span>부자되는습관</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/ec03.jpeg" alt=""><strong>서울 옆 '성남·고양 미니신도시' 아파트 분양 군침도네</strong></a>
+                            <span>성남 고등지구·고양 지축지구</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/ec04.png" alt=""><strong>돈을 어디에 쓸 것인가?<br>천만원 굴리기 팁!</strong></a>
+                            <span>천만원 재테크</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/ec02.jpeg" alt=""><strong>'싸구려만 사지 않는다'<br>돈 쌓이는 작은 습관 9</strong></a>
+                            <span>부자되는습관</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/ec03.jpeg" alt=""><strong>서울 옆 '성남·고양 미니신도시' 아파트 분양 군침도네</strong></a>
+                            <span>성남 고등지구·고양 지축지구</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/ec04.png" alt=""><strong>돈을 어디에 쓸 것인가?<br>천만원 굴리기 팁!</strong></a>
+                            <span>천만원 재테크</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/ec02.jpeg" alt=""><strong>'싸구려만 사지 않는다'<br>돈 쌓이는 작은 습관 9</strong></a>
+                            <span>부자되는습관</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/ec03.jpeg" alt=""><strong>서울 옆 '성남·고양 미니신도시' 아파트 분양 군침도네</strong></a>
+                            <span>성남 고등지구·고양 지축지구</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/ec04.png" alt=""><strong>돈을 어디에 쓸 것인가?<br>천만원 굴리기 팁!</strong></a>
+                            <span>천만원 재테크</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/ec02.jpeg" alt=""><strong>'싸구려만 사지 않는다'<br>돈 쌓이는 작은 습관 9</strong></a>
+                            <span>부자되는습관</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/ec03.jpeg" alt=""><strong>서울 옆 '성남·고양 미니신도시' 아파트 분양 군침도네</strong></a>
+                            <span>성남 고등지구·고양 지축지구</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/ec04.png" alt=""><strong>돈을 어디에 쓸 것인가?<br>천만원 굴리기 팁!</strong></a>
+                            <span>천만원 재테크</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/ec02.jpeg" alt=""><strong>'싸구려만 사지 않는다'<br>돈 쌓이는 작은 습관 9</strong></a>
+                            <span>부자되는습관</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/ec03.jpeg" alt=""><strong>서울 옆 '성남·고양 미니신도시' 아파트 분양 군침도네</strong></a>
+                            <span>성남 고등지구·고양 지축지구</span>
+                        </li>                    
+                    </ul>
+                    <ul class="post_con">
+                        <li class="post_colspan">
+                            <a href="#"><img src="resource/images/post_img/nanum/nanum01.jpg" alt=""><span class="dim"></span><p><span>JOB 이슈</span><strong>이미 연봉 1억인데 '3천' 더 달라는 현대차‥가능할까?</strong></p></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/nanum/nanum02.jpg" alt=""><strong>미국문화 전공→65대1 뚫고 신의 직장 '한국은행' 간 비</strong></a>
+                            <span>합격 수기</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/nanum/nanum03.jpg" alt=""><strong>자수성가한 부자들의 10가지 성공습관</strong></a>
+                            <span>인사이트</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/nanum/nanum04.jpg" alt=""><strong>‘실직 80%’ 금융권, 아닌 밤중에‘피바람’</strong></a>
+                            <span>인사이트</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/nanum/nanum02.jpg" alt=""><strong>미국문화 전공→65대1 뚫고 신의 직장 '한국은행' 간 비</strong></a>
+                            <span>합격 수기</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/nanum/nanum03.jpg" alt=""><strong>자수성가한 부자들의 10가지 성공습관</strong></a>
+                            <span>인사이트</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/nanum/nanum04.jpg" alt=""><strong>‘실직 80%’ 금융권, 아닌 밤중에‘피바람’</strong></a>
+                            <span>인사이트</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/nanum/nanum02.jpg" alt=""><strong>미국문화 전공→65대1 뚫고 신의 직장 '한국은행' 간 비</strong></a>
+                            <span>합격 수기</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/nanum/nanum03.jpg" alt=""><strong>자수성가한 부자들의 10가지 성공습관</strong></a>
+                            <span>인사이트</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/nanum/nanum04.jpg" alt=""><strong>‘실직 80%’ 금융권, 아닌 밤중에‘피바람’</strong></a>
+                            <span>인사이트</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/nanum/nanum02.jpg" alt=""><strong>미국문화 전공→65대1 뚫고 신의 직장 '한국은행' 간 비</strong></a>
+                            <span>합격 수기</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/nanum/nanum03.jpg" alt=""><strong>자수성가한 부자들의 10가지 성공습관</strong></a>
+                            <span>인사이트</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/nanum/nanum04.jpg" alt=""><strong>‘실직 80%’ 금융권, 아닌 밤중에‘피바람’</strong></a>
+                            <span>인사이트</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/nanum/nanum02.jpg" alt=""><strong>미국문화 전공→65대1 뚫고 신의 직장 '한국은행' 간 비</strong></a>
+                            <span>합격 수기</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/nanum/nanum03.jpg" alt=""><strong>자수성가한 부자들의 10가지 성공습관</strong></a>
+                            <span>인사이트</span>
+                        </li>
+                    </ul>
+                    <ul class="post_con">
+                        <li class="post_colspan">
+                            <a href="#"><img src="resource/images/new/post_img/si01.jpeg" alt=""><span class="dim"></span><p><span>맥스 테그마크의 유니버스</span><strong>수많은 우주, 4단계 멀티 유니버스의 세계</strong></p></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/si02.jpg" alt=""><strong>지폐가 과학의 집합체라고? 나비와 지폐의 상관관계</strong></a>
+                            <span>케미터지Joe</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/si03.jpeg" alt=""><strong>아시아 방송시장 향해 쏘아올린 무궁화위성 7호</strong></a>
+                            <span>한국경제</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/si04.jpeg" alt=""><strong>바다 숲을 만들자, 바다에 해조류를 심자! '바다식목</strong></a>
+                            <span>우리가 사랑한 비린내</span>
+                        </li>
+                        
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/si02.jpg" alt=""><strong>지폐가 과학의 집합체라고? 나비와 지폐의 상관관계</strong></a>
+                            <span>케미터지Joe</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/si03.jpeg" alt=""><strong>아시아 방송시장 향해 쏘아올린 무궁화위성 7호</strong></a>
+                            <span>한국경제</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/si04.jpeg" alt=""><strong>바다 숲을 만들자, 바다에 해조류를 심자! '바다식목</strong></a>
+                            <span>우리가 사랑한 비린내</span>
+                        </li>
+                        
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/si02.jpg" alt=""><strong>지폐가 과학의 집합체라고? 나비와 지폐의 상관관계</strong></a>
+                            <span>케미터지Joe</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/si03.jpeg" alt=""><strong>아시아 방송시장 향해 쏘아올린 무궁화위성 7호</strong></a>
+                            <span>한국경제</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/si04.jpeg" alt=""><strong>바다 숲을 만들자, 바다에 해조류를 심자! '바다식목</strong></a>
+                            <span>우리가 사랑한 비린내</span>
+                        </li>
+                        
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/si02.jpg" alt=""><strong>지폐가 과학의 집합체라고? 나비와 지폐의 상관관계</strong></a>
+                            <span>케미터지Joe</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/si03.jpeg" alt=""><strong>아시아 방송시장 향해 쏘아올린 무궁화위성 7호</strong></a>
+                            <span>한국경제</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/si04.jpeg" alt=""><strong>바다 숲을 만들자, 바다에 해조류를 심자! '바다식목</strong></a>
+                            <span>우리가 사랑한 비린내</span>
+                        </li>
+                        
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/si02.jpg" alt=""><strong>지폐가 과학의 집합체라고? 나비와 지폐의 상관관계</strong></a>
+                            <span>케미터지Joe</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/si03.jpeg" alt=""><strong>아시아 방송시장 향해 쏘아올린 무궁화위성 7호</strong></a>
+                            <span>한국경제</span>
+                        </li>
+                    </ul>
+                    <ul class="post_con">
+                        <li class="post_colspan">
+                            <a href="#"><img src="resource/images/post_img/know/know01.jpg" alt=""><span class="dim"></span><p><span>러시아의 대제, 표트르 1세</span><strong>서구화 개혁을 통해 강대국을 건설하다</strong></p></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/know/know02.jpg" alt=""><strong>딕씨가 추천하는!<br>신규 지식백과 보기</strong></a>
+                            <span>네이버 사전 공식 블로그</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/know/know03.jpg" alt=""><strong>중국 공군의 성장을 이끈 강력한 전투기</strong></a>
+                            <span>무기의 세계<span class="bar"></span>|<span class="bar"></span>J-11</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/know/know04.jpg" alt=""><strong>영국 왕실의 정원이 모두의 휴식처로</strong></a>
+                            <span>하이드 파크(Hyde Park)</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/know/know02.jpg" alt=""><strong>딕씨가 추천하는!<br>신규 지식백과 보기</strong></a>
+                            <span>네이버 사전 공식 블로그</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/know/know03.jpg" alt=""><strong>중국 공군의 성장을 이끈 강력한 전투기</strong></a>
+                            <span>무기의 세계<span class="bar"></span>|<span class="bar"></span>J-11</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/know/know04.jpg" alt=""><strong>영국 왕실의 정원이 모두의 휴식처로</strong></a>
+                            <span>하이드 파크(Hyde Park)</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/know/know02.jpg" alt=""><strong>딕씨가 추천하는!<br>신규 지식백과 보기</strong></a>
+                            <span>네이버 사전 공식 블로그</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/know/know03.jpg" alt=""><strong>중국 공군의 성장을 이끈 강력한 전투기</strong></a>
+                            <span>무기의 세계<span class="bar"></span>|<span class="bar"></span>J-11</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/know/know04.jpg" alt=""><strong>영국 왕실의 정원이 모두의 휴식처로</strong></a>
+                            <span>하이드 파크(Hyde Park)</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/know/know02.jpg" alt=""><strong>딕씨가 추천하는!<br>신규 지식백과 보기</strong></a>
+                            <span>네이버 사전 공식 블로그</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/know/know03.jpg" alt=""><strong>중국 공군의 성장을 이끈 강력한 전투기</strong></a>
+                            <span>무기의 세계<span class="bar"></span>|<span class="bar"></span>J-11</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/know/know04.jpg" alt=""><strong>영국 왕실의 정원이 모두의 휴식처로</strong></a>
+                            <span>하이드 파크(Hyde Park)</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/know/know02.jpg" alt=""><strong>딕씨가 추천하는!<br>신규 지식백과 보기</strong></a>
+                            <span>네이버 사전 공식 블로그</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/know/know03.jpg" alt=""><strong>중국 공군의 성장을 이끈 강력한 전투기</strong></a>
+                            <span>무기의 세계<span class="bar"></span>|<span class="bar"></span>J-11</span>
+                        </li>
+                    </ul>
+                    <ul class="post_con">
+                        <li class="post_colspan">
+                            <a href="#"><img src="resource/images/new/post_img/ch.jpeg" alt=""><span class="dim"></span><p><span>13억의 지갑 서유진</span><strong>샤오미도 뛰어들었다...꽃 장사는 안 망한다고?</strong></p></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/ch02.jpeg" alt=""><strong>스타트업이 피어난다...꽃정기배달 1억명이 받아본다</strong></a>
+                            <span>13억의 지갑</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/ch03.jpeg" alt=""><strong>중화부흥으로 가는 다섯 갈래 길의 이름은?</strong></a>
+                            <span>알기쉬운 중국경제</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/ch04.jpeg" alt=""><strong>중국의 인공지능 그리고 ‘Korea Inside’</strong></a>
+                            <span>IT 칼럼</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/ch02.jpeg" alt=""><strong>스타트업이 피어난다...꽃정기배달 1억명이 받아본다</strong></a>
+                            <span>13억의 지갑</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/ch03.jpeg" alt=""><strong>중화부흥으로 가는 다섯 갈래 길의 이름은?</strong></a>
+                            <span>알기쉬운 중국경제</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/ch04.jpeg" alt=""><strong>중국의 인공지능 그리고 ‘Korea Inside’</strong></a>
+                            <span>IT 칼럼</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/ch02.jpeg" alt=""><strong>스타트업이 피어난다...꽃정기배달 1억명이 받아본다</strong></a>
+                            <span>13억의 지갑</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/ch03.jpeg" alt=""><strong>중화부흥으로 가는 다섯 갈래 길의 이름은?</strong></a>
+                            <span>알기쉬운 중국경제</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/ch04.jpeg" alt=""><strong>중국의 인공지능 그리고 ‘Korea Inside’</strong></a>
+                            <span>IT 칼럼</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/ch02.jpeg" alt=""><strong>스타트업이 피어난다...꽃정기배달 1억명이 받아본다</strong></a>
+                            <span>13억의 지갑</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/ch03.jpeg" alt=""><strong>중화부흥으로 가는 다섯 갈래 길의 이름은?</strong></a>
+                            <span>알기쉬운 중국경제</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/ch04.jpeg" alt=""><strong>중국의 인공지능 그리고 ‘Korea Inside’</strong></a>
+                            <span>IT 칼럼</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/ch02.jpeg" alt=""><strong>스타트업이 피어난다...꽃정기배달 1억명이 받아본다</strong></a>
+                            <span>13억의 지갑</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/ch03.jpeg" alt=""><strong>중화부흥으로 가는 다섯 갈래 길의 이름은?</strong></a>
+                            <span>알기쉬운 중국경제</span>
+                        </li>
+                    </ul>
+                    <ul class="post_con">
+                        <li class="post_colspan">
+                            <a href="#"><img src="resource/images/new/post_img/bi01.jpeg" alt=""><span class="dim"></span><p><span>뉴로 마케팅</span><strong>신경과학기술로 고객의 무의식을 탐구하다</strong></p></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/bi02.jpeg" alt=""><strong>인간은 언제부터<br>출퇴근을 하기 시작했을까</strong></a>
+                            <span>Work Life</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/bi03.jpeg" alt=""><strong>요즘 난리 미세먼지 대란<br>IoT와 클라우드로 해결</strong></a>
+                            <span>Biz on Cloud</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/bi04.png" alt=""><strong>제품 개발엔 절반만 쓰고<br>나머지 시간은 '이것'에</strong></a>
+                            <span>창업</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/bi02.jpeg" alt=""><strong>인간은 언제부터<br>출퇴근을 하기 시작했을까</strong></a>
+                            <span>Work Life</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/bi03.jpeg" alt=""><strong>요즘 난리 미세먼지 대란<br>IoT와 클라우드로 해결</strong></a>
+                            <span>Biz on Cloud</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/bi04.png" alt=""><strong>제품 개발엔 절반만 쓰고<br>나머지 시간은 '이것'에</strong></a>
+                            <span>창업</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/bi02.jpeg" alt=""><strong>인간은 언제부터<br>출퇴근을 하기 시작했을까</strong></a>
+                            <span>Work Life</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/bi03.jpeg" alt=""><strong>요즘 난리 미세먼지 대란<br>IoT와 클라우드로 해결</strong></a>
+                            <span>Biz on Cloud</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/bi04.png" alt=""><strong>제품 개발엔 절반만 쓰고<br>나머지 시간은 '이것'에</strong></a>
+                            <span>창업</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/bi02.jpeg" alt=""><strong>인간은 언제부터<br>출퇴근을 하기 시작했을까</strong></a>
+                            <span>Work Life</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/bi03.jpeg" alt=""><strong>요즘 난리 미세먼지 대란<br>IoT와 클라우드로 해결</strong></a>
+                            <span>Biz on Cloud</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/bi04.png" alt=""><strong>제품 개발엔 절반만 쓰고<br>나머지 시간은 '이것'에</strong></a>
+                            <span>창업</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/bi02.jpeg" alt=""><strong>인간은 언제부터<br>출퇴근을 하기 시작했을까</strong></a>
+                            <span>Work Life</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/bi03.jpeg" alt=""><strong>요즘 난리 미세먼지 대란<br>IoT와 클라우드로 해결</strong></a>
+                            <span>Biz on Cloud</span>
+                        </li>
+                    </ul>
+                    <ul class="post_con">
+                        <li class="post_colspan">
+                            <a href="#"><img src="resource/images/post_img/know/know01.jpg" alt=""><span class="dim"></span><p><span>5월 10일 바다식목일</span><strong>온실가스 흡수 탁월한 바닷속 그린벨트 아시나요</strong></p></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/know/know02.jpg" alt=""><strong>탈모방지제·화장품까지,당신이 알던 해조류 아냐</strong></a>
+                            <span>해조류의 변신</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/know/know03.jpg" alt=""><strong>좁은 베란다에서 효율적으로 재배하는 법</strong></a>
+                            <span>3단 텃밭 가꾸기</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/know/know04.jpg" alt=""><strong>샐러드용 텃밭 가꾸기 실전 강의 따라해보세요</strong></a>
+                            <span>텃밭 100% 활용</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/know/know02.jpg" alt=""><strong>탈모방지제·화장품까지,당신이 알던 해조류 아냐</strong></a>
+                            <span>해조류의 변신</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/know/know03.jpg" alt=""><strong>좁은 베란다에서 효율적으로 재배하는 법</strong></a>
+                            <span>3단 텃밭 가꾸기</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/know/know04.jpg" alt=""><strong>샐러드용 텃밭 가꾸기 실전 강의 따라해보세요</strong></a>
+                            <span>텃밭 100% 활용</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/know/know02.jpg" alt=""><strong>탈모방지제·화장품까지,당신이 알던 해조류 아냐</strong></a>
+                            <span>해조류의 변신</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/know/know03.jpg" alt=""><strong>좁은 베란다에서 효율적으로 재배하는 법</strong></a>
+                            <span>3단 텃밭 가꾸기</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/know/know04.jpg" alt=""><strong>샐러드용 텃밭 가꾸기 실전 강의 따라해보세요</strong></a>
+                            <span>텃밭 100% 활용</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/know/know02.jpg" alt=""><strong>탈모방지제·화장품까지,당신이 알던 해조류 아냐</strong></a>
+                            <span>해조류의 변신</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/know/know03.jpg" alt=""><strong>좁은 베란다에서 효율적으로 재배하는 법</strong></a>
+                            <span>3단 텃밭 가꾸기</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/know/know04.jpg" alt=""><strong>샐러드용 텃밭 가꾸기 실전 강의 따라해보세요</strong></a>
+                            <span>텃밭 100% 활용</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/know/know02.jpg" alt=""><strong>탈모방지제·화장품까지,당신이 알던 해조류 아냐</strong></a>
+                            <span>해조류의 변신</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/post_img/know/know03.jpg" alt=""><strong>좁은 베란다에서 효율적으로 재배하는 법</strong></a>
+                            <span>3단 텃밭 가꾸기</span>
+                        </li>
+                    </ul>
+                    <ul class="post_con">
+                        <li class="post_colspan">
+                            <a href="#"><img src="resource/images/new/post_img/fa.jpeg" alt=""><span class="dim"></span><p><span>스승의 날 이벤트</span><strong>[스승의날 댓글 이벤트] 정말 감사했던 우리 선생님!</strong></p></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/fa02.jpeg" alt=""><strong>홍차의 나라, 영국!<br>티타임 문화가 궁금해?</strong></a>
+                            <span>잡다한 지식 사전</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/fa03.jpeg" alt=""><strong>대통령을 소환하는 투표가 있다?</strong></a>
+                            <span>고래가 그랬어</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/fa04.jpeg" alt=""><strong>Break a leg!<br>다리를 부러뜨리면 행운이?</strong></a>
+                            <span>터치! 잉글리시</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/fa02.jpeg" alt=""><strong>홍차의 나라, 영국!<br>티타임 문화가 궁금해?</strong></a>
+                            <span>잡다한 지식 사전</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/fa03.jpeg" alt=""><strong>대통령을 소환하는 투표가 있다?</strong></a>
+                            <span>고래가 그랬어</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/fa04.jpeg" alt=""><strong>Break a leg!<br>다리를 부러뜨리면 행운이?</strong></a>
+                            <span>터치! 잉글리시</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/fa02.jpeg" alt=""><strong>홍차의 나라, 영국!<br>티타임 문화가 궁금해?</strong></a>
+                            <span>잡다한 지식 사전</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/fa03.jpeg" alt=""><strong>대통령을 소환하는 투표가 있다?</strong></a>
+                            <span>고래가 그랬어</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/fa04.jpeg" alt=""><strong>Break a leg!<br>다리를 부러뜨리면 행운이?</strong></a>
+                            <span>터치! 잉글리시</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/fa02.jpeg" alt=""><strong>홍차의 나라, 영국!<br>티타임 문화가 궁금해?</strong></a>
+                            <span>잡다한 지식 사전</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/fa03.jpeg" alt=""><strong>대통령을 소환하는 투표가 있다?</strong></a>
+                            <span>고래가 그랬어</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/fa04.jpeg" alt=""><strong>Break a leg!<br>다리를 부러뜨리면 행운이?</strong></a>
+                            <span>터치! 잉글리시</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/fa02.jpeg" alt=""><strong>홍차의 나라, 영국!<br>티타임 문화가 궁금해?</strong></a>
+                            <span>잡다한 지식 사전</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="resource/images/new/post_img/fa03.jpeg" alt=""><strong>대통령을 소환하는 투표가 있다?</strong></a>
+                            <span>고래가 그랬어</span>
+                        </li>
+                    </ul>
                 </div>
                 <div id="shop_box">
                     <div class="shop_top">
                         <h3><a href="#">네이버 쇼핑</a></h3>
                         <ul>
-                            <li class="s_pro on"><a href="#">상품</a></li>
-                            <li class="s_mall"><a href="#">쇼핑몰</a></li>
-                            <li class="s_men"><a href="#">MEN</a></li>
+                            <li class="s_pro on"><a href="#"><i></i><span class="hidden">상품</span></a></li>
+                            <li class="s_mall"><a href="#"><i></i><span class="hidden">쇼핑몰</span></a></li>
+                            <li class="s_men"><a href="#"><i></i><span class="hidden">MEN</span></a></li>
                         </ul>
                     </div>
                     <div class="shop_con">
@@ -1169,15 +1812,15 @@
                             <li><a href="#">올리브영</a></li>
                         </ul>
                         <ul class="shop_list">
-                            <li><a href="#"><img src="resource/images/shop_img/shop01.jpg" alt=""><p>코트속S라인~<br>날씬핏티셔츠</p></a></li>
-                            <li><a href="#"><img src="resource/images/shop_img/shop02.jpg" alt=""><p>지치고 힘들때<br>힐링이 된다~</p></a></li>
-                            <li><a href="#"><img src="resource/images/shop_img/shop03.jpg" alt=""><p>매일매일 예뻐<br>볼수록더예뻐</p></a></li>
-                            <li><a href="#"><img src="resource/images/shop_img/shop04.jpg" alt=""><p>11년째 예쁜옷<br>겨울내내예뻐~</p></a></li>
-                            <li><a href="#"><img src="resource/images/shop_img/shop05.jpg" alt=""><p>연말파티에딱!<br>로맨틱원피스~</p></a></li>
-                            <li><a href="#"><img src="resource/images/shop_img/shop06.jpg" alt=""><p>40%~ 5,900원!<br>상 하의~SET</p></a></li>
-                            <li><a href="#"><img src="resource/images/shop_img/shop07.jpg" alt=""><p>모던 하우스<br>수납장 특가~!</p></a></li>
-                            <li><a href="#"><img src="resource/images/shop_img/shop08.jpg" alt=""><p>연말~설렘주의<br>완전~인기폭발</p></a></li>
-                            <li><a href="#"><img src="resource/images/shop_img/shop09.jpg" alt=""><p>특별할인쿠폰!<br>무료배송EVENT</p></a></li>
+                            <li><a href="#"><span><img src="resource/images/shop_img/shop01.jpg" alt=""></span><p>코트속S라인~<br>날씬핏티셔츠</p></a></li>
+                            <li><a href="#"><span><img src="resource/images/shop_img/shop02.jpg" alt=""></span><p>지치고 힘들때<br>힐링이 된다~</p></a></li>
+                            <li><a href="#"><span><img src="resource/images/shop_img/shop03.jpg" alt=""></span><p>매일매일 예뻐<br>볼수록더예뻐</p></a></li>
+                            <li><a href="#"><span><img src="resource/images/shop_img/shop04.jpg" alt=""></span><p>11년째 예쁜옷<br>겨울내내예뻐~</p></a></li>
+                            <li><a href="#"><span><img src="resource/images/shop_img/shop05.jpg" alt=""></span><p>연말파티에딱!<br>로맨틱원피스~</p></a></li>
+                            <li><a href="#"><span><img src="resource/images/shop_img/shop06.jpg" alt=""></span><p>40%~ 5,900원!<br>상 하의~SET</p></a></li>
+                            <li><a href="#"><span><img src="resource/images/shop_img/shop07.jpg" alt=""></span><p>모던 하우스<br>수납장 특가~!</p></a></li>
+                            <li><a href="#"><span><img src="resource/images/shop_img/shop08.jpg" alt=""></span><p>연말~설렘주의<br>완전~인기폭발</p></a></li>
+                            <li><a href="#"><span><img src="resource/images/shop_img/shop09.jpg" alt=""></span><p>특별할인쿠폰!<br>무료배송EVENT</p></a></li>
                         </ul>
                     </div>
                     <div class="shop_bot">
@@ -1190,18 +1833,19 @@
                             <li><a href="#"><em>엘카미노레이디</em> 겨울 인기 SHOES 최대 49% 할인!</a></li>
                             <li><a href="#"><em>엘리시아</em> 빅사이즈여성의류 최대 70% 할인</a></li>
                             <li><a href="#"><em>목화나무숲</em> 크리스마스! <span>북유럽소품 20%↓</span></a></li>
+                            <li><a href="#"><em>다이소몰</em> 집들이 선물 최대 74%↓</a></li>
                         </ul>
                     </div>
                     <div class="page_arrow">
-                        <p><span>1</span>/3</p>
-                        <a href="#">이전</a>
-                        <a href="#">다음</a>
+                        <p><span>1</span>/19</p>
+                        <a href="#"><i></i><span class="hidden">이전</span></a>
+                        <a href="#"><i></i><span class="hidden">다음</span></a>
                     </div>
                 </div>
                 <div class="con_foot">
                     <div>
                         <a href="#">
-                            <p><img src="resource/images/bear.jpg" alt=""></p>
+                            <p><img src="resource/images/new/foot01.png" alt=""></p>
                             <span>로플랫</span>
                             <strong>오프라인 풋트래픽</strong>
                             <p>매장방문 데이터를 활용한<br>고객이 실제 원하는 상품추천</p>
@@ -1209,22 +1853,22 @@
                     </div>
                     <div>
                         <a href="#">
-                            <p><img src="resource/images/seoul.jpg" alt=""></p>
+                            <p><img src="resource/images/new/foot02.png" alt=""></p>
                             <span>서울특별시</span>
                             <strong>서울을 가지세요</strong>
                             <p>당신에게 꼭 맞는<br>맞춤형 서울을 찾아보세요</p>
                         </a>
                     </div>
-                    <div class="ad_foot"><a href="#"><img src="resource/images/ad_foot.jpg" alt="마음의 소리"></a></div>
                 </div>
+                <div class="ad_foot"><a href="#"><img src="resource/images/new/ad_sub2.jpg" alt="마음의 소리"></a></div>
             </div>
 		</div>
-		<div id="footer">
-			<div class="foot_noti">
-				<strong><a href="#">공지사항</a></strong>
-				<p><a href="#">네이버 ‘개인정보처리방침’ 변경에 대한 안내</a></p>
-				<strong><a href="#">서비스 전체보기</a></strong>
-			</div>
+        <div class="foot_noti">
+            <strong><a href="#">공지사항</a></strong>
+            <p><a href="#">네이버 ‘개인정보처리방침’ 변경에 대한 안내</a></p>
+            <strong><a href="#">서비스 전체보기</a></strong>
+        </div>
+        <div id="footer">
 			<div class="foot_con">
 				<ul>
 					<li><a href="#">회사소개</a></li>
@@ -1237,6 +1881,17 @@
 					<li><a href="#">네이버 정책</a></li>
 					<li><a href="#">네이버 고객센터</a></li>
 				</ul>
+				<dl class="whale">
+				    <dt>웨일 브라우저</dt>
+				    <dd><a href="#">다운받기</a></dd>
+				    <dd><a href="#"></a></dd>
+				</dl>
+                <dl class="app">
+				    <dt>네이버앱 다운로드</dt>
+				    <dd><a href="#">아이폰</a></dd>
+				    <dd><a href="#">안드로이드</a></dd>
+				    <dd><span></span></dd>
+				</dl>
 				<p>© <strong>Bumblisher.</strong></p>
 			</div>
 		</div>	

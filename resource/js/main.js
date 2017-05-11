@@ -193,21 +193,21 @@ $(document).ready(function(){
 		if($(this).parent().index()=="0"){
 			$(".news_con").children(".on").removeClass();
 			$(".news_con ul").addClass("on");
-			$(".news_footer .page_arrow").show();
+			$(".news_pager .page_arrow").show();
 			$(".news_con ul li").remove();
 			NewsRandom();
 			Npage = 1;
-			$(".news_footer .page_arrow p span").text(Npage);
+			$(".news_pager .page_arrow .page_num span").text(Npage);
 			var news_page = $(".news_con ul li").length
-			var Npage_All = Math.ceil(news_page/12);
-			$(".news_footer .page_arrow p").html('<span>1</span>/'+Npage_All);
+			var Npage_All = Math.ceil(news_page/news_count);
+			$(".news_pager .page_arrow .page_num").html('<span>1</span>/'+Npage_All);
 			$(".news_sel ul a").removeClass("on").eq(0).addClass("on");
 			$(".news_sel > a").text("주요언론사");
 
 		}else{
 			$(".news_con").children(".on").removeClass();
 			$(".news_con div").addClass("on");
-			$(".news_footer .page_arrow").hide();
+			$(".news_pager .page_arrow").hide();
 		}
 	})
 
@@ -229,13 +229,13 @@ $(document).ready(function(){
 		for(var num=1; num < RandomArr.length; num++){
 			if(RandomArr[num][2]==target_text){
 				flag++;
-				if(flag<=12){
-					$(".news_con ul").append('<li class="on"><a href="#"><img src="resource/images/new/news_img/news'+RandomArr[num][0]+'.png" alt="'+RandomArr[num][1]+'"></a></li>');
+				if(flag<=news_count){
+					$(".news_con ul").append('<li class="on"><a href="#"><img src="resource/images/new/news_img/news'+RandomArr[num][0]+'.png" alt="'+RandomArr[num][1]+'"></a><div class="news_btn"><a href="#">구독</a><a href="#">기사보기</a></div></li>');
 				}else{
-					$(".news_con ul").append('<li><a href="#"><img src="resource/images/new/news_img/news'+RandomArr[num][0]+'.png" alt="'+RandomArr[num][1]+'"></a></li>');
+					$(".news_con ul").append('<li><a href="#"><img src="resource/images/new/news_img/news'+RandomArr[num][0]+'.png" alt="'+RandomArr[num][1]+'"></a><div class="news_btn"><a href="#">구독</a><a href="#">기사보기</a></div></li>');
 				}
 			}else if(target_text=="주요언론사"){
-				if(num<=12){
+				if(num<=news_count){
 				$(".news_con ul").append('<li class="on"><a href="#"><img src="resource/images/new/news_img/news'+RandomArr[num][0]+'.png" alt="'+RandomArr[num][1]+'"></a></li>');
 				}else{
 					$(".news_con ul").append('<li><a href="#"><img src="resource/images/new/news_img/news'+RandomArr[num][0]+'.png" alt="'+RandomArr[num][1]+'"></a></li>');
@@ -244,8 +244,8 @@ $(document).ready(function(){
 		}
 		Npage = 1;
 		news_page = $(".news_con ul li").length;
-		Npage_All = Math.ceil(news_page/12);
-		$(".news_footer .page_arrow p").html('<span>1</span>/'+Npage_All);
+		Npage_All = Math.ceil(news_page/news_count);
+		$(".news_pager .page_arrow .page_num").html('<span>1</span>/'+Npage_All);
 	})
 
 	var NewsArr = [
@@ -259,7 +259,7 @@ $(document).ready(function(){
 		]
 	
 	var RandomArr = [];
-
+    var news_count = 18;
 	/* random - news */
 	function NewsRandom(){
 		for(var i=0;i <= NewsArr.length;i++){
@@ -275,34 +275,33 @@ $(document).ready(function(){
 			}
 		}
 		for(var num=1; num < RandomArr.length; num++){
-			if(num<=12){
-				$(".news_con ul").append('<li class="on"><a href="#"><img src="resource/images/new/news_img/news'+RandomArr[num][0]+'.png" alt="'+RandomArr[num][1]+'"></a></li>');
+			if(num<=news_count){
+				$(".news_con ul").append('<li class="on"><a href="#"><img src="resource/images/new/news_img/news'+RandomArr[num][0]+'.png" alt="'+RandomArr[num][1]+'"></a><div class="news_btn"><a href="#">구독</a><a href="#">기사보기</a></div></li>');
 			}else{
-				$(".news_con ul").append('<li><a href="#"><img src="resource/images/new/news_img/news'+RandomArr[num][0]+'.png" alt="'+RandomArr[num][1]+'"></a></li>');
+				$(".news_con ul").append('<li><a href="#"><img src="resource/images/new/news_img/news'+RandomArr[num][0]+'.png" alt="'+RandomArr[num][1]+'"></a><div class="news_btn"><a href="#">구독</a><a href="#">기사보기</a></div></li>');
 			}
 		}
-		$(".news_con ul li:nth-child(6n)").children("a").css({"width":"84px"});
+		//$(".news_con ul li:nth-child(6n)").children("a").css({"width":"84px"});
 	}
 	NewsRandom();
 	
 	/* paging */
 	var news_page = $(".news_con ul li").length
-	var Npage_All = Math.ceil(news_page/12);
+	var Npage_All = Math.ceil(news_page/news_count);
 	var Npage = 1;
-	$(".news_footer .page_arrow p").html('<span>1</span>/'+Npage_All);
+	$(".news_pager .page_arrow .page_num").html('<span>1</span>/'+Npage_All);
 	
 	/* pager - news*/
-	$(".news_footer .page_arrow a").on("click", function(e){
+	$(".news_pager .page_arrow a").on("click", function(e){
 		e.preventDefault();
 		var target = $(".news_con ul");
 		var on_idx = target.children(".on:eq(0)").index();
 		var Pnum = 0;
 		//if()
-		var pre_idx = on_idx-12;
-		var next_idx = on_idx+12;
-		var next_idx2 = next_idx+12;
-		
-		if($(this).index() =="1"){
+		var pre_idx = on_idx-news_count;
+		var next_idx = on_idx+news_count;
+		var next_idx2 = next_idx+news_count;
+		if($(this).hasClass("pre")){
 			if(Npage>1){
 				Npage--
 				target.children(".on").removeClass("on");
@@ -319,29 +318,26 @@ $(document).ready(function(){
 				}
 			}
 		}
-		$(".news_footer .page_arrow p span").text(Npage);
+		$(".news_pager .page_arrow .page_num span").text(Npage);
 	})
 
 	/* post */
-	$(".post_footer .page_arrow a").on("click", function(e){
+	$(".post_pager .page_arrow a").on("click", function(e){
 		
 		e.preventDefault();
 		var target = $(".post_menu li");
 		var target2 = $(".post_con");
-		var target3 = $(".post_footer ul");
 		var on_idx = $(".post_menu li.on").index();
 		var length = target.length;
-		if($(this).index() =="1"){
+		if($(this).hasClass("pre")){
 			if(on_idx>0){
 				on_idx--;
 				console.log(on_idx)
 				target.removeClass("on");
 				target2.removeClass("on");
-				target3.removeClass("on");
 				target.eq(on_idx).addClass("on");
 				target2.eq(on_idx).addClass("on");
-				target3.eq(on_idx).addClass("on");
-				$(".post_footer .page_arrow p span").text(on_idx+1);
+				$(".post_pager .page_arrow p span").text(on_idx+1);
 			}
 		}else{
 			if(on_idx<(length-1)){
@@ -349,24 +345,20 @@ $(document).ready(function(){
 				console.log(on_idx)
 				target.removeClass("on");
 				target2.removeClass("on");
-				target3.removeClass("on");
 				target.eq(on_idx).addClass("on");
 				target2.eq(on_idx).addClass("on");
-				target3.eq(on_idx).addClass("on");
-				$(".post_footer .page_arrow p span").text(on_idx+1);
+				$(".post_pager .page_arrow p span").text(on_idx+1);
 			}
 		}
 	}) 
 	
 	$(".post_menu a").on("click", function(e){
-		var target = $(".post_footer ul");
 		e.preventDefault();
 		var idx = $(this).parent().index();
 		$(".post_menu li").removeClass("on");
 		$(".post_con").removeClass("on");
 		$(this).parent().addClass("on");
 		$(".post_con").eq(idx).addClass("on");
-		$(".post_footer .page_arrow p span").text(idx+1);
 		target.removeClass("on");
 		target.eq(idx).addClass("on");
 	})
