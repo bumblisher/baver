@@ -329,6 +329,8 @@ $(document).ready(function(){
 		var target2 = $(".post_con");
 		var on_idx = $(".post_menu li.on").index();
 		var length = target.length;
+        var left = 0;
+        
 		if($(this).hasClass("pre")){
 			if(on_idx>0){
 				on_idx--;
@@ -337,7 +339,15 @@ $(document).ready(function(){
 				target2.removeClass("on");
 				target.eq(on_idx).addClass("on");
 				target2.eq(on_idx).addClass("on");
-				$(".post_pager .page_arrow p span").text(on_idx+1);
+                
+                var left = -on_idx*55+161;
+                if(on_idx<=3){
+                    $(".post_menu").stop().animate({"left":0});
+                }else if(on_idx>=18){
+                    $(".post_menu").stop().animate({"left":-800+"px"});
+                }else{
+                    $(".post_menu").stop().animate({"left":left+"px"});
+                }
 			}
 		}else{
 			if(on_idx<(length-1)){
@@ -347,19 +357,34 @@ $(document).ready(function(){
 				target2.removeClass("on");
 				target.eq(on_idx).addClass("on");
 				target2.eq(on_idx).addClass("on");
-				$(".post_pager .page_arrow p span").text(on_idx+1);
+                
+                var left = -on_idx*55+161;
+                if(on_idx<=3){
+                    $(".post_menu").stop().animate({"left":0});
+                }else if(on_idx>=18){
+                    $(".post_menu").stop().animate({"left":-800+"px"});
+                }else{
+                    $(".post_menu").stop().animate({"left":left+"px"});
+                }
 			}
 		}
 	}) 
-	
 	$(".post_menu a").on("click", function(e){
 		e.preventDefault();
-		var idx = $(this).parent().index();
+        var target = $(this).parent();
+		var idx = target.index();
+        var left = -idx*55+166;
 		$(".post_menu li").removeClass("on");
 		$(".post_con").removeClass("on");
 		$(this).parent().addClass("on");
 		$(".post_con").eq(idx).addClass("on");
-		target.removeClass("on");
-		target.eq(idx).addClass("on");
+        if(idx<=3){
+            $(".post_menu").animate({"left":0});
+        }else if(idx>=18){
+            $(".post_menu").animate({"left":-800+"px"});
+        }else{
+            $(".post_menu").animate({"left":left+"px"});
+        }
+        console.log(idx)
 	})
 })

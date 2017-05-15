@@ -269,6 +269,9 @@
 .Tbox_list ul li{margin-bottom: 11px;}
 .Tbox_list ul li strong{color: #2565d0;padding-right: 9px;}
 
+.Tbox_list li .eng{padding:23px 16px 0;}
+.Tbox_list li .eng span{color: #2565d0}
+.Tbox_list li .eng strong{display: block;margin: 6px 0 10px;font: 16px/20px Arial,sans-serif;font-weight: bold;}
 
 .login_ad{float: right;margin-top: 8px;border: 1px solid #dee3eb;}
 .login_ad img{width: 330px;height: 148px;}
@@ -486,3 +489,7 @@
 .foot_con .app {width: 158px;}
 .foot_con .app dd:last-child span{display: block;height: 50px;background: url(../images/new/sp_main_v170424.png) no-repeat -60px -67px}
 .foot_con p{clear: both;letter-spacing: 0;white-space:nowrap}
+
+@media screen and (max-height:768px) {
+  body {color: red;}
+}
