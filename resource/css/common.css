@@ -87,7 +87,6 @@
 .time_search ol li{width: 100%;height: 16px;margin-bottom: 4px;}
 .time_search ol li a{display: block;position: relative;font-size: 14px;letter-spacing: -1px;cursor:default; }
 .time_search ol li a span{display: inline-block;font-family:Arial,Sans-serif;width: 17px;color: #00ab33;font-size: 16px;text-align: center;text-decoration: none;cursor:pointer;line-height: 16px;letter-spacing: 0;margin-right: 4px;}
-.time_search ol li a .up {background: url(../images/icon.png) no-repeat -70px -108px;}
 .time_search .time_bot {display: none;}
 
 .time_search.on {position: absolute;top: -1px;right: 0;width: 256px;height: 300px;background-color: #fff;z-index: 15;border: 1px solid #bec8d8;padding: 16px;}
@@ -105,7 +104,7 @@
 .time_search.on ol li a {font-size: 12px;color: #000;cursor: auto}
 .time_search.on ol li a span{font-size: 14px;color: #222;}
 .time_search.on ol li a:hover,.time_search.on ol li a:focus {text-decoration: underline;}
-.time_search.on ol li a .up{background-position: -70px -120px;}
+.time_search.on ol li a .up{float: right;width: 12px;height: 10px;background: url(../images/new/sp_main_v170424.png) no-repeat -188px -67px;vertical-align: -1px;}
 .time_search.on .time_bot{display: block;color: #aaa;border-top: 1px solid #eee;padding-top: 8px;margin-top: 7px;font-size: 11px;}
 .time_search.on .time_bot .ico{display: inline-block;width: 16px;height: 16px;background: url(../images/new/sp_main_v170424.png) no-repeat 0 -179px;vertical-align: -4px;}
 
@@ -185,8 +184,9 @@
 .news_btn a{font-size: 12px;display: inline-block;width: 34px;float: left;padding: 7px 0;border: 1px solid #e3e7ee;color: 222px;background-color: #fff;letter-spacing: -1px;}
 .news_btn a + a{width: 57px;margin-left: -1px;}
 .news_btn a:hover{position: relative;z-index: 1;border-color: #bec8d8;}
-.news_con > div{display: none;text-align: center;padding: 63px 0 30px;line-height: 17px;}
-.news_con > div button{width: 111px;height: 31px;margin-top: 10px;background: url(../images/icon.png) no-repeat -174px -863px}
+.news_con > div{display: none;text-align: center;padding: 45px 0 30px;line-height: 18px;color: #888;}
+.news_con > div strong{display: block;font-size: 14px;margin-bottom: 9px;letter-spacing: -1px;color: #222;}
+.news_con > div button{width: 106px;height: 30px;margin-top: 16px;background-color: #00c73c;color: #fff;font-size: 12px;}
 .news_con .on{display: block;}
 .news_con > div.on{position: relative;z-index: 11;background-color:#fff;}
 

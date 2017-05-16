@@ -173,9 +173,26 @@ $(document).ready(function(){
                     }
                 $(".time_search ol").eq(1).animate({"margin-top":searchTop+"px"},500, function(){searchTop = searchTop-20;});
             }
-		},1000)
+		},2000)
 	}
 	
+    /* tab - time_search */
+    $(".time_tab a").on("click", function(){
+        if($(this).index()==0){
+            $(".time_tab a").removeClass("on");
+            $(this).addClass("on");
+            $(".time_search ol").removeClass("on");
+            $(".time_search .ten").addClass("on");
+        }else{
+            $(".time_tab a").removeClass("on");
+            $(this).addClass("on");
+            $(".time_search ol").removeClass("on");
+            $(".time_search .twenty").addClass("on");
+        }
+        
+    })
+    
+    
 	/* rolling - news_box */
 	$(".news_rolling").on("mouseenter", function(){
 		clearTimeout(rolling_news);
