@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	
-	searchTime();
+	//searchTime();
 	newsTime();
 	inputFocus($(".login_box input:text"));
 	inputFocus($(".login_box input:password"));
@@ -105,26 +105,27 @@ $(document).ready(function(){
 		
 	})
 
-	$(".time_search a").on("blur", function(){
-		clearTimeout(rolling_search);
-		searchTop = -20;
-		searchTime();
-		$(".time_search").removeClass("on");
-		$(".time_search h3").addClass("hidden");
-		$(".time_search ol li").removeClass("on");
-	})
+//	$(".time_search a").on("blur", function(){
+//		clearTimeout(rolling_search);
+//		searchTop = -20;
+//		searchTime();
+//		$(".time_search").removeClass("on");
+//		$(".time_search h3").addClass("hidden");
+//		$(".time_search ol li").removeClass("on");
+//	})
 
 	function searchTime(){
 		rolling_search = setInterval(function(){
 			if(searchTop==-200){
-				$(".time_search ol").clone().css({"margin-top":0}).appendTo($(".time_search"));
+				//$(".time_search ol").clone().css({"margin-top":0}).appendTo($(".time_search"));
+                $(".time_search ol").eq(1).addClass("on");
+                $(".time_search ol.on").css({"margin-top":0});
 			}
 			if(searchTop==-220){
-				$(".time_search ol").eq(1).remove();
-				$(".time_search ol").eq(0).css({"margin-top":0})
+				$(".time_search ol").eq(0).removeClass("on");
 				searchTop=-20;
 				}
-			$(".time_search ol").eq(0).animate({"margin-top":searchTop+"px"},500, function(){searchTop = searchTop-20;});
+			$(".time_search ol.on").animate({"margin-top":searchTop+"px"},500, function(){searchTop = searchTop-20;});
 		},2000)
 	}
 	
@@ -320,7 +321,33 @@ $(document).ready(function(){
 		}
 		$(".news_pager .page_arrow .page_num span").text(Npage);
 	})
-
+    
+    /* today */
+	$(".Tbox_date .page_arrow a").on("click", function(e){
+		
+		e.preventDefault();
+		var target = $(".Tbox_list > li");
+		var on_idx = $(".Tbox_list > li.on").index();
+		var length = target.length;
+		if($(this).hasClass("pre")){
+			if(on_idx>0){
+				on_idx--;
+				console.log(on_idx)
+				target.removeClass("on");
+				target.eq(on_idx).addClass("on");
+                $(".Tbox_date .page_num span").text(on_idx+1);
+			}
+		}else{
+			if(on_idx<(length-1)){
+				on_idx++;
+				console.log(on_idx)
+				target.removeClass("on");
+				target.eq(on_idx).addClass("on");
+                $(".Tbox_date .page_num span").text(on_idx+1);
+			}
+		}
+	}) 
+    
 	/* post */
 	$(".post_pager .page_arrow a").on("click", function(e){
 		

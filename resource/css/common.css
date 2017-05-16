@@ -28,7 +28,7 @@
 .skip_nav a:focus{top: 0;outline-color: #2db400}
 
 /* 검색 부분 */
-.search_box{width: 1080px;padding-top: 35px;height: 103px;margin: 0 auto;position: relative;}
+.search_box{width: 1080px;padding-top: 35px;height: 103px;margin: 0 auto;position: relative;transition: all 0.3s}
 .search_box h1{float: left;margin:-6px 0 0 -2px;}
 .search_box h1 a{display: block;width: 202px;height: 57px;background: url(../images/new/sp_main_v170329a.png) no-repeat -10px -10px;}
 .search_box .search {position: relative;float: left;}
@@ -76,21 +76,38 @@
 
 /* 인기검색어 */
 .time_search {position: relative;float: right;width: 198px;overflow: hidden;height: 20px;}
-.time_search h3{font-size: 12px;letter-spacing: -1px;}
+.time_search h3{font-size: 14px;letter-spacing: -1px;}
+.time_search > a {display: none;position: absolute;top: 19px;right: 16px;color: #666;letter-spacing: -1px;}
+.time_search > a .dataLab{display: inline-block;overflow: hidden;margin-right: 2px;width: 58px;height: 10px;background: url(../images/new/sp_main_v170424.png) no-repeat 0 -127px;vertical-align: -1px;}
+.time_search > a .ico{display: inline-block;margin-left: 1px;width: 4px; height: 7px;background:url(../images/new/sp_main_v170424.png) no-repeat -68px -127px;vertical-align: 1px;}
 .time_search .arrow{display: block;position: absolute;top: 4px;right: 4px;width: 11px;height: 6px;background: url(../images/new/sp_main_v170329a.png) no-repeat -232px -107px;}
+.time_search .time_tab{display: none;}
+.time_search ol{display: none;}
+.time_search ol.on {display: block;}
 .time_search ol li{width: 100%;height: 16px;margin-bottom: 4px;}
-.time_search ol li a{display: block;position: relative;font-size: 14px;letter-spacing: -1px;}
+.time_search ol li a{display: block;position: relative;font-size: 14px;letter-spacing: -1px;cursor:default; }
 .time_search ol li a span{display: inline-block;font-family:Arial,Sans-serif;width: 17px;color: #00ab33;font-size: 16px;text-align: center;text-decoration: none;cursor:pointer;line-height: 16px;letter-spacing: 0;margin-right: 4px;}
 .time_search ol li a .up {background: url(../images/icon.png) no-repeat -70px -108px;}
+.time_search .time_bot {display: none;}
 
-.time_search.on {position: absolute;top: -1px;right: 0;width: 160px;height: 258px;background-color: #fff;z-index: 15;border: 1px solid #2db400;padding: 20px;}
+.time_search.on {position: absolute;top: -1px;right: 0;width: 256px;height: 300px;background-color: #fff;z-index: 15;border: 1px solid #bec8d8;padding: 16px;}
 .time_search.on h3{display: block;}
 .time_search.on .arrow{display: none;}
-.time_search.on ol li {margin-top: 8px;}
+.time_search.on > a {display: block;}
+.time_search.on div{display: block;background-color: #fff;color: #222;margin: 14px 0 8px;overflow: hidden;}
+.time_search.on div a{float: left;width: 126px;color: #888;height: 17px;padding-top: 5px;border: 1px solid #e3e7ee;text-align: center;background-color: #f9fafc;}
+.time_search.on .time_tab a+a{margin-left: -1px;}
+.time_search.on .time_tab a.on{color: #222;background-color: #fff;}
+.time_search.on ol{display: none;}
+.time_search.on ol.on {display: block;}
+.time_search.on ol li {margin-top: 6px;}
 .time_search.on ol li.on{font-weight: bold;}
-.time_search.on ol li a {color: #000;}
+.time_search.on ol li a {font-size: 12px;color: #000;cursor: auto}
+.time_search.on ol li a span{font-size: 14px;color: #222;}
 .time_search.on ol li a:hover,.time_search.on ol li a:focus {text-decoration: underline;}
 .time_search.on ol li a .up{background-position: -70px -120px;}
+.time_search.on .time_bot{display: block;color: #aaa;border-top: 1px solid #eee;padding-top: 8px;margin-top: 7px;font-size: 11px;}
+.time_search.on .time_bot .ico{display: inline-block;width: 16px;height: 16px;background: url(../images/new/sp_main_v170424.png) no-repeat 0 -179px;vertical-align: -4px;}
 
 /* 뉴스 부분 */
 #content_wrap{width: 100%;background-color: #f2f4f7;overflow: hidden;border-bottom: 1px solid #d1d8e4;}
@@ -241,7 +258,7 @@
 .Tbox_date .page_arrow .pre:hover p{background-position: -433px -310px;}
 .Tbox_date .page_arrow .next:hover p{background-position: -433px -331px}
 
-.Tbox_list li{display: none;}
+.Tbox_list > li{display: none;}
 .Tbox_list .on{display: block;}
 
 .weather {padding: 10px 0 0 20px;height: 96px;}
@@ -491,5 +508,5 @@
 .foot_con p{clear: both;letter-spacing: 0;white-space:nowrap}
 
 @media screen and (max-height:768px) {
-  body {color: red;}
+    .search_box{padding-top: 15px;height: 83px;}
 }
