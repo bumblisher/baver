@@ -227,12 +227,12 @@
 .login_submit{position: absolute;left: 149px;top: 0;}
 .login_submit input[type=submit]{width: 67px;height: 67px;font-family: Dotum,'돋움',Helvetica,AppleSDGothicNeo,sans-serif;letter-spacing: -1px;background-color: #1ec545;border: 0;cursor:pointer;color: #fff;font-weight: bold;}
 .login_ip{position: absolute;top: 0;right: -1px;}
-.login_ip p{width: 63px;height: 21px;border: solid 1px #f1f3f6;background-color: #fff;padding: 11px 6px 0;font-size: 11px;}
+.login_ip p{width: 64px;height: 21px;border: solid 1px #f1f3f6;background-color: #fff;padding: 11px 6px 0;font-size: 11px;}
 .login_ip p ~ p{width: 76px;padding: 0;margin-top: -1px;height: 32px;}
 .login_ip p ~ p a{display: block;height: 30px;line-height: 34px;width: 100%;margin: 0;text-align: center;letter-spacing: -1px;}
 .login_ip p a{float: left;margin-right: 7px;color: #888;letter-spacing: -1px;}
 .login_ip p a:focus,.login_ip p a:hover{text-decoration: underline;}
-.login_ip p span{position: relative;display: block;width: 26px;height: 12px;float: left;}
+.login_ip p span{position: relative;display: block;width: 26px;height: 12px;float: left;overflow: hidden;}
 .login_ip p span input[type=checkbox]{position: absolute;width: 26px;height: 12px;top: 0;left: 0;border: 0;cursor:pointer;z-index: 1;}
 .login_ip p span input[type=checkbox].on ~ label{background-position: -344px -156px;}
 .login_ip p span label{position: relative;display: block;width: 26px;height: 13px;z-index: 2;background: url(/resource/images/new/sp_login_v170424.png) no-repeat -308px -156px;cursor:pointer;text-indent: -9999px;font-size: 0;}
